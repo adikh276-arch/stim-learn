@@ -6,7 +6,21 @@
     <title>Stimulants Learn - QuitMantra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="./i18n/loader.js" defer></script>
+    <script>
+        (function() {
+            var loc = window.location;
+            var path = loc.pathname;
+            var base = "./";
+            if (!path.endsWith('/') && path.indexOf('.') === -1) {
+                var parts = path.split('/');
+                base = parts[parts.length - 1] + "/";
+            }
+            var s = document.createElement('script');
+            s.src = base + "i18n/loader.js";
+            s.defer = true;
+            document.head.appendChild(s);
+        })();
+    </script>
     <style>
         :root {
             --blue: #4F46E5;
@@ -433,183 +447,19 @@
         }
     ]
 };
-
-
-
-        let readArticles = new Set(JSON.parse(localStorage.getItem('read_stimulants') || '[]'));
-        let fbData = {};
-        let currentLesson = null;
-
-        function init() {
-            renderList();
-            updateProgress();
-            
-            // Scroll tracking for reader
-            document.getElementById('view-art').addEventListener('scroll', () => {
-                const el = document.getElementById('view-art');
-                const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100 || 0;
-                document.getElementById('read-fill').style.width = Math.min(100, pct) + '%';
-            });
-        }
-
-        function renderList() {
-            document.getElementById('crs-title').textContent = DATA.course;
-            const phasesEl = document.getElementById('phases');
-            phasesEl.innerHTML = DATA.sections.map(sec => `
-                <div class="phase-blk">
-                    <div class="phase-hd">
-                        <span class="phase-num">${sec.num}.</span>
-                        <span class="phase-lbl">${sec.phase}</span>
-                    </div>
-                    <hr class="phase-rule">
-                    <div class="lessons-col">
-                        ${sec.lessons.map(lesson => renderLessonCard(lesson)).join('')}
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function renderLessonCard(l) {
-            const isDone = readArticles.has(l.id);
-            const doneIco = `<svg width="19" height="19" viewBox="0 0 19 19" fill="none"><path d="M4 9.5l3.5 3.5 8-8" stroke="#16A34A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-            const quizIco = `<svg width="19" height="19" viewBox="0 0 19 19" fill="none"><rect x="3.5" y="2.5" width="12" height="14" rx="2" stroke="#4F46E5" stroke-width="1.4"/><path d="M6.5 6.5h3M6.5 9.5h2M12 9.5l2 2.5-2 2" stroke="#4F46E5" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-            const artIco = `<svg width="19" height="19" viewBox="0 0 19 19" fill="none"><rect x="3.5" y="2.5" width="12" height="14" rx="2" stroke="#4F46E5" stroke-width="1.4"/><path d="M6.5 6.5h6M6.5 9.5h6M6.5 13h4" stroke="#4F46E5" stroke-width="1.3" stroke-linecap="round"/></svg>`;
-            
-            const ico = isDone ? doneIco : (l.isQuiz ? quizIco : artIco);
-            const right = isDone 
-                ? `<div style="width:21px;height:21px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`
-                : `<svg width="15" height="15" viewBox="0 0 15 15" fill="none" style="flex-shrink:0;color:var(--ink-4)"><path d="M5.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-
-            return `
-                <div class="lc ${isDone ? 'done' : ''}" onclick="openLesson('${l.id}')">
-                    <div class="lc-ico">${ico}</div>
-                    <div class="lc-body">
-                        <div class="lc-title">${l.title}</div>
-                        <div class="lc-meta">
-                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.2" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3.5v2.2l1.5 1.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
-                            ${l.mins} min<span class="meta-dot"></span>${l.type}
-                        </div>
-                    </div>
-                    ${right}
-                </div>
-            `;
-        }
-
-        function openLesson(id) {
-            let lesson;
-            let phase;
-            DATA.sections.forEach(s => {
-                const found = s.lessons.find(l => l.id === id);
-                if (found) { lesson = found; phase = s; }
-            });
-            if (!lesson) return;
-
-            currentLesson = lesson;
-            const artEl = document.getElementById('view-art');
-            artEl.classList.add('open');
-            artEl.scrollTop = 0;
-            document.getElementById('main-nav').style.display = 'none';
-            document.getElementById('read-fill').style.width = '0%';
-            
-            document.getElementById('art-eye').textContent = phase.phase;
-            document.getElementById('art-h1').textContent = lesson.title;
-            document.getElementById('art-time').textContent = `${lesson.mins} min read`;
-
-            if (lesson.isQuiz) {
-                renderQuizCard();
-            } else {
-                document.getElementById('art-body').innerHTML = lesson.content || '<p>Content coming soon.</p>';
+        (function() {
+            var loc = window.location;
+            var path = loc.pathname;
+            var base = "./";
+            if (!path.endsWith('/') && path.indexOf('.') === -1) {
+                var parts = path.split('/');
+                base = parts[parts.length - 1] + "/";
             }
-
-            syncDoneBtn();
-            syncFbBtns();
-        }
-
-        function renderQuizCard() {
-            document.getElementById('art-body').innerHTML = `
-                <div class="quiz-card">
-                    <div class="quiz-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="3" width="18" height="20" rx="3" stroke="#4F46E5" stroke-width="1.7"/><path d="M8 9h10M8 13h6M15 17l2.5 2.5-2.5 2.5" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                    <h2>How Addicted Am I?</h2>
-                    <p>Take the Clinical Self-Assessment for ${DATA.substance}. 11 questions, about 2 minutes.</p>
-                    <button class="quiz-card-btn" onclick="window.open('./quiz.html#substance=alcohol','_blank')">Take the Assessment</button>
-                </div>
-            `;
-        }
-
-        function closeArt() {
-            document.getElementById('view-art').classList.remove('open');
-            document.getElementById('main-nav').style.display = 'flex';
-            currentLesson = null;
-            renderList();
-        }
-
-        function markDone() {
-            if (!currentLesson) return;
-            readArticles.add(currentLesson.id);
-            localStorage.setItem('read_stimulants', JSON.stringify([...readArticles]));
-            toast('Lesson completed!');
-            syncDoneBtn();
-            updateProgress();
-        }
-
-        function syncDoneBtn() {
-            const isDone = readArticles.has(currentLesson.id);
-            const btn = document.getElementById('done-btn');
-            btn.classList.toggle('completed', isDone);
-            btn.innerHTML = isDone 
-                ? `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Completed`
-                : `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Mark as Complete`;
-        }
-
-        function updateProgress() {
-            let total = 0;
-            DATA.sections.forEach(s => total += s.lessons.length);
-            const n = readArticles.size;
-            const pct = Math.round((n / total) * 100);
-            document.getElementById('crs-fill').style.width = pct + '%';
-            document.getElementById('crs-pct').textContent = `Completed ${pct}%`;
-            document.getElementById('crs-cnt').textContent = n > 0 ? `${n} / ${total} lessons` : '';
-            document.getElementById('crs-cont').classList.toggle('vis', n > 0 && n < total);
-        }
-
-        function continueCourse() {
-            for (const s of DATA.sections) {
-                for (const l of s.lessons) {
-                    if (!readArticles.has(l.id)) { openLesson(l.id); return; }
-                }
-            }
-        }
-
-        function giveFb(yes) {
-            fbData[currentLesson.id] = yes;
-            syncFbBtns();
-            document.getElementById('fb-thanks').style.display = 'block';
-        }
-
-        function syncFbBtns() {
-            const val = fbData[currentLesson.id];
-            document.getElementById('fb-y').className = 'fb-btn' + (val === true ? ' yes' : '');
-            document.getElementById('fb-n').className = 'fb-btn' + (val === false ? ' no' : '');
-        }
-
-        function toast(msg) {
-            const el = document.getElementById('toast');
-            document.getElementById('toast-txt').textContent = msg;
-            el.classList.add('in');
-            setTimeout(() => el.classList.remove('in'), 3000);
-        }
-
-        // i18n Hook
-        window.onTranslationsLoaded = (t) => {
-            if (t.DATA) DATA = t.DATA;
-            init();
-        };
-
-        // Fallback
-        setTimeout(() => {
-            if (document.getElementById('phases').innerHTML === '') init();
-        }, 600);
-    
+            var s = document.createElement('script');
+            s.src = base + "i18n/loader.js";
+            s.defer = true;
+            document.head.appendChild(s);
+        })();
     
     </script>
 </body>
