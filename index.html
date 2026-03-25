@@ -436,24 +436,7 @@
         }
     ]
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
+let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
 
         
 
@@ -570,85 +553,6 @@
             document.getElementById('fb-thanks').style.display = 'block';
             setTimeout(() => document.getElementById('fb-thanks').style.display = 'none', 3000);
         }
-
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        // === SELF-CONTAINED i18n ===
-        const _LANGS = ['en','es','fr','de','hi','ja','zh-CN','ko','ru','it','pt','ar','tr','nl','pl','vi','th','id','sv','cs'];
-        (async function() {
-            const params = new URLSearchParams(window.location.search);
-            let lang = params.get('lang') || localStorage.getItem('qm_lang') || 'en';
-            if (!_LANGS.includes(lang)) lang = 'en';
-            localStorage.setItem('qm_lang', lang);
-
-            // Set language selector value once DOM is ready
-            function setSelector(lang) {
-                const sel = document.getElementById('language-selector');
-                if (sel) {
-                    sel.value = lang;
-                    sel.addEventListener('change', function(e) {
-                        const newLang = e.target.value;
-                        localStorage.setItem('qm_lang', newLang);
-                        const u = new URL(window.location.href);
-                        u.searchParams.set('lang', newLang);
-                        window.location.href = u.href;
-                    });
-                }
-            }
-
-            if (lang !== 'en') {
-                try {
-                    // Build absolute URL to the locale JSON
-                    const origin = window.location.origin;
-                    const pathParts = window.location.pathname.split('/');
-                    // Remove trailing empty string if URL ends with /
-                    if (pathParts[pathParts.length - 1] === '') pathParts.pop();
-                    // pathParts now ends at the module folder name
-                    const moduleBase = pathParts.join('/');
-                    const jsonUrl = origin + moduleBase + '/i18n/locales/' + lang + '.json?v=20';
-                    console.log('[QM i18n] Fetching', jsonUrl);
-
-                    const resp = await fetch(jsonUrl);
-                    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' for ' + jsonUrl);
-                    const t = await resp.json();
-                    console.log('[QM i18n] Loaded', lang, 'translations');
-
-                    // Apply DATA override
-                    if (t.DATA) { DATA = t.DATA; }
-
-                    // Apply static strings
-                    if (t.btn_back) document.querySelectorAll('.back-txt').forEach(el => el.innerText = t.btn_back);
-                    document.documentElement.lang = lang;
-
-                    // Re-run init with translated data
-                    init(DATA);
-                    setSelector(lang);
-                    return;
-                } catch(e) {
-                    console.error('[QM i18n] Translation load failed, using English:', e.message);
-                }
-            }
-
-            // English or fallback
-            init(DATA);
-            setSelector(lang);
-        })();
-    
-    
         // === SELF-CONTAINED i18n ===
         const _LANGS = ['en','es','fr','de','hi','ja','zh-CN','ko','ru','it','pt','ar','tr','nl','pl','vi','th','id','sv','cs'];
         (async function() {
