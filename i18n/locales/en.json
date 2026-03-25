@@ -2,7 +2,7 @@
   "DATA": {
     "substance": "Stimulants",
     "course": "Understanding Stimulant Addiction",
-    "sections": [
+    "phases": [
       {
         "num": "01",
         "phase": "Awareness & Readiness",
@@ -128,10 +128,11 @@
       }
     ]
   },
+  "course_title": "Understanding Stimulant Addiction",
+  "btn_back": "Back",
   "progress_label": "Completed 0%",
   "feedback_q": "Was this lesson helpful?",
   "btn_mark_done": "Mark as Complete",
-  "btn_back": "Back",
   "btn_continue": "Continue",
   "toast_msg": "Lesson completed!",
   "quiz_title": "How Addicted Am I?",

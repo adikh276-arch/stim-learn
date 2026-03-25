@@ -2,7 +2,7 @@
   "DATA": {
     "substance": "Stimulerende middelen",
     "course": "Inzicht in stimulerende middelenverslaving",
-    "sections": [
+    "phases": [
       {
         "num": "01",
         "phase": "Bewustzijn en paraatheid",
@@ -128,10 +128,11 @@
       }
     ]
   },
+  "course_title": "Inzicht in stimulerende middelenverslaving",
+  "btn_back": "Rug",
   "progress_label": "Voltooid 0%",
   "feedback_q": "Was deze les nuttig?",
   "btn_mark_done": "Markeren als voltooid",
-  "btn_back": "Rug",
   "btn_continue": "Doorgaan",
   "toast_msg": "Les afgerond!",
   "quiz_title": "Hoe verslaafd ben ik?",

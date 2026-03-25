@@ -171,11 +171,10 @@
         .art-bar {
             position: sticky;
             top: 0;
-            z-index: 10;
-            background: rgba(255, 255, 255, .93);
-            backdrop-filter: blur(12px);
+            z-index: 100;
+            background: white;
             border-bottom: 1px solid var(--border);
-            padding: 10px 16px;
+            padding: 12px 16px;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -184,18 +183,22 @@
         .back-btn {
             display: flex;
             align-items: center;
-            gap: 5px;
-            padding: 7px 14px 7px 10px;
-            background: var(--bg-2);
-            border: 1px solid var(--border);
+            gap: 8px;
+            padding: 10px 20px 10px 12px;
+            background: #0f172a !important;
+            border: none;
             border-radius: 100px;
-            font-size: 13px;
-            font-weight: 500;
+            font-size: 14px;
+            font-weight: 700;
             font-family: 'DM Sans', sans-serif;
-            color: var(--ink-2);
+            color: #ffffff !important;
             cursor: pointer;
-            transition: all .15s;
+            transition: all .2s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            -webkit-appearance: none;
         }
+        .back-btn:hover { transform: scale(1.05); background: #1e293b !important; }
+        .back-btn svg { stroke: #ffffff !important; }
 
         .read-track { flex: 1; height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
         .read-fill { height: 100%; background: var(--blue); width: 0%; border-radius: 2px; }
@@ -287,7 +290,8 @@
     <div id="view-art">
         <div class="art-bar">
             <button class="back-btn" onclick="closeArt()">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M8.5 10.5L4.5 6.5l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                <span class="back-txt" data-i18n="btn_back">Back</span>
             </button>
             <div class="read-track"><div class="read-fill" id="read-fill"></div></div>
         </div>
@@ -319,7 +323,7 @@
         let DATA = {
     "substance": "Stimulants",
     "course": "Understanding Stimulant Addiction",
-    "sections": [
+    "phases": [
         {
             "num": "01",
             "phase": "Awareness & Readiness",
@@ -450,14 +454,42 @@
 
 
 
+
+
+
+
         let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
 
-        function init() {
+        // Move hook to top to avoid race conditions
+        window.onTranslationsLoaded = (t) => {
+            if (t.DATA) {
+                DATA = t.DATA;
+                init(t.DATA);
+            }
+            if (t.course_title) {
+                document.getElementById('crs-title').innerText = t.course_title;
+                document.getElementById('crs-title').removeAttribute('data-i18n');
+            }
+            if (t.progress_label) {
+                document.getElementById('crs-pct').innerText = t.progress_label;
+                document.getElementById('crs-pct').removeAttribute('data-i18n');
+            }
+            if (t.btn_back) {
+                document.querySelectorAll('.back-txt').forEach(span => span.innerText = t.btn_back);
+            }
+        };
+
+        function init(customData) {
+            const currentData = customData || DATA;
+            if (!currentData) return;
+            const phases = currentData.phases || currentData.sections;
+            if (!phases) return;
+            
             const list = document.getElementById('phases');
             list.innerHTML = '';
             let total = 0, done = 0;
 
-            DATA.sections.forEach(sec => {
+            phases.forEach(sec => {
                 const phase = document.createElement('div');
                 phase.className = 'phase-blk';
                 phase.innerHTML = `
@@ -469,7 +501,8 @@
                     <div class="lessons-col"></div>
                 `;
                 const col = phase.querySelector('.lessons-col');
-                sec.lessons.forEach(ls => {
+                const lessons = sec.lessons || [];
+                lessons.forEach(ls => {
                     total++;
                     const isDone = read_stimulant.includes(ls.id);
                     if(isDone) done++;
@@ -492,17 +525,25 @@
             });
 
             const pct = total ? Math.round((done / total) * 100) : 0;
-            document.getElementById('crs-fill').style.width = pct + '%';
-            document.getElementById('crs-pct').innerText = `Completed ${pct}%`;
-            document.getElementById('crs-cnt').innerText = `${done}/${total}`;
+            const fill = document.getElementById('crs-fill');
+            if (fill) fill.style.width = pct + '%';
+            const pctText = document.getElementById('crs-pct');
+            if (pctText && !pctText.hasAttribute('data-i18n-applied')) {
+                pctText.innerText = `Completed ${pct}%`;
+            }
+            const cntText = document.getElementById('crs-cnt');
+            if (cntText) cntText.innerText = `${done}/${total}`;
 
-            const next = DATA.sections.flatMap(s => s.lessons).find(l => !read_stimulant.includes(l.id));
+            const allLessons = phases.flatMap(s => s.lessons || []);
+            const next = allLessons.find(l => !read_stimulant.includes(l.id));
             const contBtn = document.getElementById('crs-cont');
-            if (next && done > 0) {
-                contBtn.classList.add('vis');
-                window.nextLesson = next;
-            } else {
-                contBtn.classList.remove('vis');
+            if (contBtn) {
+                if (next && done > 0) {
+                    contBtn.style.display = 'flex';
+                    window.nextLesson = next;
+                } else {
+                    contBtn.style.display = 'none';
+                }
             }
         }
 
@@ -552,17 +593,12 @@
             setTimeout(() => document.getElementById('fb-thanks').style.display = 'none', 3000);
         }
 
-        // i18n Integration
-        window.onTranslationsLoaded = (t) => {
-            if (t.DATA) {
-                DATA = t.DATA;
-            }
-            if (t.course_title) document.getElementById('crs-title').innerText = t.course_title;
-            if (t.progress_label) document.getElementById('crs-pct').innerText = t.progress_label;
-            init();
-        };
-
+        // Re-run init if needed
         if (!window.i18nData) init();
+    
+    
+    
+    
     
     
     
