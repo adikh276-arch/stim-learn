@@ -9,14 +9,20 @@
     <script>
         (function() {
             var loc = window.location;
-            if (!loc.pathname.endsWith('/') && !loc.pathname.includes('.')) {
-                loc.replace(loc.pathname + '/' + loc.search + loc.hash);
+            var path = loc.pathname;
+            // Robust path resolution for loader.js
+            if (!path.endsWith('/') && !path.includes('.')) {
+                loc.replace(path + '/' + loc.search + loc.hash);
                 return;
             }
             var s = document.createElement('script');
-            s.src = "./i18n/loader.js?v=4";
+            // Resolve loader.js relative to the current folder, ensuring the slash is handled
+            var basePath = path.endsWith('/') ? path : path.substring(0, path.lastIndexOf('/') + 1);
+            var loaderUrl = (basePath.endsWith('/') ? basePath : basePath + '/') + 'i18n/loader.js?v=' + Date.now();
+            s.src = loaderUrl;
             s.defer = true;
             document.head.appendChild(s);
+            console.log("[QuitMantra] Injected loader:", loaderUrl);
         })();
     </script>
     <style>
@@ -241,7 +247,7 @@
 </head>
 <body>
     <nav id="main-nav">
-        <div class="nav-logo">Quit<span>Mantra</span></div>
+        <div class="nav-logo">Quit<span>Mantra</span> <small style="opacity:0.5;font-size:9px;font-weight:400;margin-left:4px">v2.1</small></div>
         <div class="lang-wrapper">
             <select id="language-selector" class="lang-picker">
                 <option value="en">EN</option>
@@ -463,6 +469,7 @@
 
 
 
+
         let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
 
         // Move hook to top to avoid race conditions
@@ -600,6 +607,7 @@
 
         // Re-run init if needed
         if (!window.i18nData) init();
+    
     
     
     
