@@ -1,0 +1,137 @@
+{
+  "app_title": "Módulo de aprendizaje",
+  "progress_label": "Progreso",
+  "back_label": "Atrás",
+  "minutes_label": "min",
+  "type_article": "Artículo",
+  "type_assessment": "Evaluación",
+  "type_activity": "Actividad",
+  "substance_name": "Estimulantes",
+  "DATA": {
+    "sections": [
+      {
+        "num": "01",
+        "title": "Cómo funcionan los estimulantes",
+        "articles": [
+          {
+            "id": "s1",
+            "title": "El cerebro bajo los efectos de la cocaína y la metanfetamina",
+            "time": "5 min",
+            "type": "Artículo",
+            "content": "<p>Los estimulantes como la cocaína y la metanfetamina actúan aumentando drásticamente los niveles de dopamina en los circuitos de recompensa del cerebro. Mientras que la cocaína lo hace bloqueando la reabsorción de dopamina, la metanfetamina va un paso más allá, bloqueando la reabsorción y estimulando una liberación aún mayor. Esto crea una intensa e inmediata oleada de energía, confianza y euforia. Sin embargo, este aumento artificial supone un gran desgaste para el cerebro. Este responde desactivando sus propios receptores de dopamina para protegerse de la estimulación abrumadora. Este agotamiento explica por qué al subidón le sigue inevitablemente un bajón: un estado de profundo cansancio, depresión e irritabilidad. Con el tiempo, el consumo regular puede provocar cambios a largo plazo en la estructura y función cerebral, afectando la memoria, la toma de decisiones y la regulación emocional. Comprender este ciclo de euforia y bajón es fundamental para la recuperación. Ayuda a reconocer que los bajones intensos que se experimentan no son un reflejo de la personalidad, sino una consecuencia biológica del impacto de la droga en la neuroquímica. Al dejar de consumirlos, tu cerebro comenzará el lento proceso de restablecer su equilibrio natural de dopamina, lo que te permitirá, con el tiempo, encontrar energía y alegría genuinas en la vida sin necesidad de estimulantes.</p>"
+          },
+          {
+            "id": "s2",
+            "title": "El uso indebido de Adderall — cuando se prescribe se convierte en un problema",
+            "time": "6 min",
+            "type": "Artículo",
+            "content": "<p>Adderall y otros estimulantes recetados son muy eficaces para tratar el TDAH, pero conllevan un alto riesgo de abuso y dependencia. El abuso se produce cuando el medicamento se toma en dosis superiores a las prescritas, sin receta médica o para fines distintos a los previstos, como estudiar o perder peso. Debido a que estos medicamentos se recetan, muchas personas creen erróneamente que son intrínsecamente seguros. Sin embargo, en dosis altas, pueden tener efectos similares a los de otros estimulantes potentes, como aumento del ritmo cardíaco, elevación de la presión arterial y un alto riesgo de adicción. La dependencia suele desarrollarse de forma sutil; es posible que necesite el medicamento para sentirse alerta o para realizar sus tareas diarias. Con el tiempo, puede resultarle imposible funcionar sin él, experimentando síntomas de abstinencia importantes como fatiga y depresión al dejar de tomarlo. Reconocer la transición del uso terapéutico al abuso problemático es fundamental. Si solicita resurtidos anticipados, usa el medicamento para afrontar el estrés o siente ansiedad por su suministro, estas son señales de que se ha desarrollado una dependencia. Reconocer esta realidad es el primer paso para trabajar con un profesional de la salud que le permita gestionar su salud de forma segura y construir una vida libre de la necesidad de abusar de estimulantes.</p>"
+          },
+          {
+            "id": "s3",
+            "title": "Explicación del ciclo de colapso",
+            "time": "5 min",
+            "type": "Artículo",
+            "content": "<p>El bajón es una característica definitoria del consumo de estimulantes, que representa el período inmediatamente posterior a un atracón o un período de alto consumo. A medida que los efectos de la droga desaparecen, los niveles de dopamina en el cerebro se desploman, lo que conduce a un estado de profundo agotamiento físico y emocional. Este bajón se caracteriza por fatiga extrema, aumento del apetito y una profunda y generalizada sensación de depresión o apatía. También puede experimentarse irritabilidad intensa, ansiedad y un deseo irresistible de consumir más sustancia para escapar del malestar. Este ciclo es lo que mantiene la adicción; el dolor del bajón impulsa al consumidor a buscar otro subidón, creando un círculo vicioso. Comprender el bajón como un evento fisiológico es crucial para iniciar la recuperación. Es una señal de que el cerebro está intentando reajustarse después de haber sido llevado al límite. Durante este tiempo, debe centrarse en el descanso, la hidratación y la nutrición. Reconocer que los intensos sentimientos de desesperación son temporales y de origen biológico puede ayudarle a resistir la tentación de consumir de nuevo. Cada vez que superas una recaída sin recurrir a los estimulantes, rompes el ciclo y permites que tu cerebro dé un paso más hacia el equilibrio natural y una recuperación duradera.</p>"
+          },
+          {
+            "id": "s4",
+            "title": "Estimulantes y riesgo cardiovascular",
+            "time": "7 min",
+            "type": "Artículo",
+            "content": "<p>Uno de los peligros más importantes e inmediatos del consumo de estimulantes es el estrés que ejercen sobre el sistema cardiovascular. Los estimulantes actúan activando la respuesta de &quot;lucha o huida&quot; del cuerpo, lo que provoca un aumento brusco de la frecuencia cardíaca y la presión arterial. Si bien esto genera una sensación temporal de energía, también obliga al corazón a trabajar mucho más y contrae los vasos sanguíneos. Esto puede provocar diversos problemas de salud graves, como palpitaciones, arritmias y un riesgo significativamente mayor de sufrir infartos y accidentes cerebrovasculares, incluso en personas jóvenes y sanas. El consumo prolongado puede causar daños permanentes en el músculo cardíaco y el revestimiento de los vasos sanguíneos. También es común que los estimulantes se consuman junto con otras sustancias como el alcohol, lo que complica aún más y aumenta el riesgo cardiovascular. Si experimenta dolor en el pecho, dificultad para respirar o taquicardia persistente, es fundamental buscar atención médica de inmediato. Comprender estos riesgos es una poderosa motivación para elegir una vida libre de estimulantes. Al dejar de fumar, reduces inmediatamente la tensión en tu corazón y permites que tu sistema cardiovascular comience a sanar y a proteger tu salud a largo plazo.</p>"
+          },
+          {
+            "id": "s5",
+            "title": "Cómo se desarrolla la dependencia",
+            "time": "7 min",
+            "type": "Evaluación",
+            "content": "<p>La dependencia a los estimulantes se desarrolla mediante una combinación de cambios biológicos en el cerebro y el refuerzo de patrones de comportamiento. Comienza con la rápida adaptación del cerebro a los aumentos masivos de dopamina causados por la droga. Para mantener el equilibrio, el cerebro reduce su producción natural de dopamina y la cantidad de receptores disponibles. Esto significa que, con el tiempo, se necesita una dosis mayor de estimulantes solo para sentirse &quot;normal&quot;, un estado conocido como tolerancia. Al mismo tiempo, el sistema de recompensa del cerebro se vuelve altamente sensible a cualquier estímulo asociado con la droga (ciertas personas, lugares o incluso momentos del día), creando poderosos deseos automáticos. La parte conductual de la dependencia es la integración de la droga en la vida como mecanismo principal para afrontar el estrés, la fatiga o las situaciones sociales. Se empieza a creer que se &quot;necesita&quot; la sustancia para funcionar o para ser la persona que se desea ser. Esta &quot;triple amenaza&quot; de tolerancia física, aumento de los antojos y dependencia psicológica es lo que hace que la dependencia a los estimulantes sea tan poderosa. Reconocer estas etapas no es señal de fracaso, sino una forma de comprender el desafío al que te enfrentas. Con el apoyo adecuado y el compromiso con el cambio, puedes revertir estos patrones y construir una vida de verdadera salud e independencia.</p>"
+          }
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Descenso seguro",
+        "articles": [
+          {
+            "id": "s6",
+            "title": "Gestionar el accidente de forma segura",
+            "time": "6 min",
+            "type": "Actividad",
+            "content": "<p>Gestionar el bajón tras el consumo de estimulantes implica priorizar la seguridad física y la estabilidad emocional durante un periodo de extrema vulnerabilidad. El primer paso es asegurarse de estar en un entorno seguro y tranquilo donde pueda descansar. Su cuerpo y cerebro están profundamente agotados y necesitan tiempo para iniciar el proceso de recuperación. La hidratación es esencial; beba abundante agua y líquidos ricos en electrolitos para ayudar a su organismo a reequilibrarse. La nutrición también es vital, ya que el apetito suele reaparecer con fuerza durante el bajón; concéntrese en alimentos saludables y ricos en proteínas que proporcionen energía sostenida. Emocionalmente, prepárese para experimentar sentimientos intensos de depresión, ansiedad e irritabilidad. Recuerde constantemente que estos sentimientos son una consecuencia biológica temporal del bajón y que pasarán. Evite tomar decisiones importantes o entablar conversaciones conflictivas durante este tiempo. Contactar con un amigo, familiar o profesional que comprenda la recuperación tras el consumo de estimulantes puede proporcionarle una capa vital de seguridad y apoyo. Si experimenta síntomas graves como alucinaciones, pensamientos paranoicos o ideación suicida, busque ayuda médica de inmediato. Gestionar la crisis de forma segura es un acto de autocuidado y el primer paso para romper el ciclo de consumo.</p>"
+          },
+          {
+            "id": "s7",
+            "title": "Recuperación del sueño tras el uso de estimulantes",
+            "time": "6 min",
+            "type": "Actividad",
+            "content": "<p>El sueño suele ser lo primero que se sacrifica en el ciclo de consumo de estimulantes, y reconstruir un patrón de sueño saludable es una de las partes más importantes de la recuperación. Los estimulantes interfieren con el ciclo natural de sueño-vigilia del cerebro, lo que provoca periodos de insomnio seguidos de largos periodos de sueño profundo que no son reparadores. Al dejar de consumirlos, la arquitectura del sueño comienza un lento proceso de reparación. Es posible que primero experimente un periodo de somnolencia excesiva mientras su cuerpo intenta recuperarse de la fatiga acumulada. A esto le sigue un periodo en el que conciliar y mantener el sueño puede ser difícil, ya que su sistema nervioso permanece en estado de alerta máxima. Para favorecer la recuperación del sueño, establezca una hora fija para despertarse y una rutina relajante antes de acostarse. Evite la cafeína y las pantallas (teléfonos, tabletas y televisores) al menos una hora antes de dormir. Asegúrese de que su habitación esté fresca, oscura y se utilice solo para dormir. Si se encuentra despierto y frustrado, levántese de la cama y realice una actividad tranquila con poca luz hasta que sienta sueño de verdad. Si bien puede que tardes varias semanas en recuperar un sueño verdaderamente reparador, mantener estos hábitos saludables permitirá que tu cerebro vuelva a su ritmo natural, brindándote la energía y la claridad que necesitas para una recuperación duradera.</p>"
+          },
+          {
+            "id": "s8",
+            "title": "Apoyo nutricional durante la recuperación",
+            "time": "6 min",
+            "type": "Artículo",
+            "content": "<p>El consumo de estimulantes suele conllevar un descuido de la nutrición, ya que la droga suprime el apetito y la atención se centra en la próxima dosis. Recuperar la salud mediante una nutrición adecuada es fundamental para la recuperación. El cerebro y el cuerpo se han visto privados de nutrientes esenciales, especialmente aquellos necesarios para la producción de neurotransmisores y la salud cardiovascular. Prioriza una dieta rica en proteínas de alta calidad, como huevos, pescado y carnes magras, que proporcionan los aminoácidos que el cerebro necesita para restablecer sus niveles de dopamina. Las grasas saludables, presentes en aguacates, frutos secos y aceite de oliva, son esenciales para la función cerebral y la reparación celular. Los carbohidratos complejos, como los cereales integrales y las verduras, proporcionan energía constante y ayudan a estabilizar el estado de ánimo. También es vital mantenerse bien hidratado durante todo el día. Es posible que al principio de la recuperación el apetito reaparezca con fuerza; en lugar de recurrir a alimentos procesados y azucarados que provocan bajones de energía, opta por comidas y tentempiés equilibrados. El apoyo nutricional no se limita a la salud física; es una forma de favorecer directamente la estabilidad emocional y la claridad mental. Al proporcionarle a tu cuerpo el combustible que necesita, estás creando una base sólida para el arduo trabajo de la recuperación y construyendo un futuro de auténtica vitalidad y fuerza.</p>"
+          },
+          {
+            "id": "s9",
+            "title": "Salud mental en los días posteriores al uso",
+            "time": "8 min",
+            "type": "Artículo",
+            "content": "<p>Los días posteriores al consumo de estimulantes suelen estar marcados por una importante &quot;carga emocional&quot; mientras el cerebro lucha por recuperar el equilibrio. Es posible que experimente diversos problemas de salud mental, como depresión profunda, ansiedad intensa, irritabilidad y una falta generalizada de motivación o placer, una condición conocida como anhedonia. Es importante comprender que estos sentimientos son una consecuencia biológica directa del agotamiento masivo de dopamina causado por la droga. No son un signo de que usted sea una persona deprimida o ansiosa por naturaleza, ni de que esté fracasando en su recuperación. Se trata de estados temporales que mejorarán gradualmente a medida que su neuroquímica se restablezca. Para sobrellevar este período, sea extremadamente paciente y compasivo consigo mismo. Evite la autocrítica y el aislamiento. Participar en actividades pequeñas y manejables que requieran concentración puede ayudar a calmar la mente ansiosa. Acudir a un terapeuta o a un grupo de apoyo proporciona un espacio seguro para compartir estos sentimientos con otras personas que lo comprenden. Si la depresión le resulta abrumadora o si tiene pensamientos de autolesión, busque ayuda profesional de inmediato. Recuerde que la apatía y la desesperación que siente hoy no son su realidad permanente. Con el tiempo y la abstinencia continua, recuperarás tu capacidad para sentir alegría, motivación y estabilidad emocional.</p>"
+          },
+          {
+            "id": "s10",
+            "title": "Conceptos básicos de reducción de daños",
+            "time": "7 min",
+            "type": "Artículo",
+            "content": "<p>Si bien el objetivo final de la recuperación es la abstinencia total de estimulantes, comprender la reducción de daños es fundamental para mantenerse seguro mientras se trabaja para lograr ese objetivo. La reducción de daños consiste en minimizar las consecuencias negativas del consumo de drogas para quienes aún no pueden o no quieren dejar de consumirlas. Las estrategias básicas incluyen nunca consumir solo —tener a alguien presente que pueda pedir ayuda si es necesario— y tener siempre un plan para manejar una recaída. Mantenerse hidratado e intentar comer, aunque sea en pequeñas cantidades, puede reducir parte del esfuerzo físico en el cuerpo. También es importante ser consciente del entorno en el que se consume y evitar situaciones de alto riesgo donde sea más probable consumir más de lo previsto. Comprender los riesgos de combinar estimulantes con otras sustancias, en particular alcohol u otras drogas, es esencial para prevenir sobredosis y eventos cardiovasculares. Llevar consigo la información de contacto de los servicios locales de reducción de daños y de asistencia médica de emergencia es un paso sencillo pero que puede salvar vidas. La reducción de daños no se trata de justificar el consumo de drogas; se trata de valorar la vida humana y brindar la seguridad y el apoyo necesarios para que una persona pueda, con el tiempo, elegir un camino más saludable. Tu seguridad es importante, y tomar incluso pequeños pasos para reducir el riesgo es un poderoso acto de autocuidado en el camino hacia la recuperación.</p>"
+          }
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Recuperación a largo plazo",
+        "articles": [
+          {
+            "id": "s11",
+            "title": "Cómo romper el patrón de atracones",
+            "time": "7 min",
+            "type": "Actividad",
+            "content": "<p>Muchas personas que consumen estimulantes se ven atrapadas en un patrón de &quot;atracón y bajón&quot;: consumen la droga en grandes cantidades durante varios días y luego sufren un bajón igualmente prolongado. Romper este patrón suele ser el primer paso más difícil en la recuperación. Requiere un cambio fundamental en la percepción de la sustancia y el compromiso de interrumpir el ciclo lo antes posible. Empiece por identificar las señales de alerta temprana de que se está planeando un atracón: ciertos pensamientos, sentimientos o estímulos sociales que siempre conducen al consumo. Una vez que reconozca estos desencadenantes, puede desarrollar un plan de emergencia. Esto podría significar abandonar un lugar de alto riesgo, llamar a una persona de apoyo de inmediato o participar en una actividad planificada que no tenga ninguna relación con el consumo de drogas. El objetivo es crear una pausa entre el impulso y la acción. También es útil abordar las razones subyacentes del atracón, ya sea una forma de escapar del estrés, una manera de lidiar con la soledad o la búsqueda de una recompensa intensa. Sustituir los atracones por una serie de hábitos saludables pequeños y constantes puede ayudar a estabilizar la neuroquímica y reducir la tendencia a experimentar altibajos repentinos. Cada vez que decides no darte un atracón, debilitas un hábito poderoso y desarrollas las habilidades de autorregulación necesarias para una recuperación duradera.</p>"
+          },
+          {
+            "id": "s12",
+            "title": "Reconstruyendo la dopamina de forma natural",
+            "time": "8 min",
+            "type": "Artículo",
+            "content": "<p>El consumo de estimulantes deja el sistema dopaminérgico del cerebro en un estado de agotamiento profundo, lo que provoca una sensación generalizada de apatía y la pérdida de placer en las actividades cotidianas. Reconstruir los niveles de dopamina de forma natural es un proceso lento pero profundamente gratificante. Implica participar en actividades que proporcionen una sensación de recompensa genuina y duradera, sin el bajón devastador que producen los estimulantes. El ejercicio físico es una de las formas más efectivas de aumentar la dopamina y mejorar el estado de ánimo; incluso una breve caminata diaria o una sesión de yoga pueden marcar una diferencia significativa. Los proyectos creativos, ya sea cocinar, pintar o escribir, proporcionan una sensación natural de logro y fluidez. Pasar tiempo en la naturaleza y cultivar conexiones sociales auténticas también estimulan los centros de recompensa del cerebro de forma sana y equilibrada. Establecer metas —y los pequeños triunfos diarios que conlleva— es otra herramienta poderosa para reconstruir la dopamina. Empieza con metas pequeñas y alcanzables y celebra tus logros. Es importante ser paciente; tu sistema de recompensa natural no se restablecerá de la noche a la mañana. Puede que te sientas apático durante varias semanas o incluso meses, pero esta es una fase temporal. Al elegir constantemente fuentes naturales de recompensa, estás ayudando a tu cerebro a redescubrir su capacidad para la alegría y a construir una vida de auténtica plenitud y fortaleza.</p>"
+          },
+          {
+            "id": "s13",
+            "title": "Estimulantes y relaciones",
+            "time": "8 min",
+            "type": "Artículo",
+            "content": "<p>El consumo de estimulantes puede tener un impacto devastador en las relaciones, caracterizado a menudo por la pérdida de confianza, el aumento de conflictos y el retraimiento emocional. La intensa obsesión por obtener y consumir la droga, junto con la volatilidad del ciclo de euforia y bajón, deja poco espacio para las necesidades de los demás. Para reparar estas relaciones, primero debes comprometerte con tu propia estabilidad y recuperación. Una reparación genuina requiere más que una simple disculpa; requiere un cambio de comportamiento constante a lo largo del tiempo. La confianza se basa en la fiabilidad. Al cumplir tus promesas, ser honesto sobre tus dificultades y estar presente durante las interacciones, estás reconstruyendo poco a poco el vínculo con tus seres queridos. También es importante tener conversaciones sinceras sobre el daño que causó tu consumo, dando a la otra persona espacio para expresar sus sentimientos sin ponerse a la defensiva. Algunas relaciones pueden haberse vuelto demasiado tóxicas o centradas en el consumo como para formar parte de tu nueva vida, e identificarlas es una parte dolorosa pero necesaria de la recuperación. Para las que decidas conservar, ten paciencia; la confianza se construye poco a poco y se pierde rápidamente. A medida que te recuperes, descubrirás que tus conexiones se vuelven más profundas y auténticas porque se basan en quién eres realmente, no en la persona en la que te convirtieron los estimulantes.</p>"
+          },
+          {
+            "id": "s14",
+            "title": "Recuperación cognitiva: qué esperar",
+            "time": "7 min",
+            "type": "Artículo",
+            "content": "<p>El uso prolongado de estimulantes puede afectar significativamente las funciones cognitivas como la memoria, la atención y la toma de decisiones. La recuperación cognitiva es el proceso mediante el cual el cerebro repara estas funciones a medida que se avanza en la sobriedad. En las primeras semanas y meses, es posible que experimente confusión mental: una sensación de lentitud mental, dificultad para concentrarse y lapsos de memoria ocasionales. Es importante comprender que esto es parte normal del proceso de recuperación. Su cerebro está, en esencia, reaprendiendo a procesar información sin la estimulación artificial de la droga. Para favorecer su recuperación cognitiva, participe en actividades que desafíen su mente de forma suave y constructiva: leer, resolver rompecabezas o aprender una nueva habilidad sencilla. Mantener un horario de sueño regular y una buena hidratación también contribuyen directamente a la salud cerebral. Se ha demostrado que el ejercicio físico mejora la función cognitiva e incluso estimula el crecimiento de nuevas vías neuronales. Tenga paciencia consigo mismo; no se sentirá mentalmente lúcido todos los días. Sin embargo, con la abstinencia continua y un enfoque en la salud general, la mayoría de las personas experimentan una recuperación significativa de su claridad cognitiva durante el primer año de recuperación. No se trata solo de &quot;dejar una droga&quot;; estás restaurando activamente la capacidad de tu cerebro para pensar con claridad, prestar atención y tomar decisiones acertadas.</p>"
+          },
+          {
+            "id": "s15",
+            "title": "Cómo obtener energía sin estimulantes",
+            "time": "7 min",
+            "type": "Artículo",
+            "content": "<p>Uno de los desafíos más comunes en la recuperación de la adicción a los estimulantes es encontrar la energía y la motivación para afrontar el día sin un impulso químico. Al principio, es posible que te sientas profundamente fatigado y sin energía, mientras tu cuerpo y tu cerebro se recuperan del agotamiento extremo provocado por su consumo. Encontrar energía natural comienza con lo básico: dormir bien, una alimentación equilibrada y actividad física regular. Una rutina matutina constante, que incluya un desayuno saludable y una caminata corta, puede ayudar a indicarle a tu cuerpo que es hora de despertar. También es útil analizar las fuentes de motivación en tu vida; encontrar tareas y metas que realmente te interesen puede proporcionarte una sensación natural de impulso. Divide las tareas grandes en pasos pequeños y manejables para evitar sentirte abrumado. Lo más importante es que te permitas avanzar a un ritmo más lento en las primeras etapas de la recuperación. No eres una versión &quot;fallida&quot; de tu yo hiperactivo que consumía estimulantes; eres un ser humano resiliente que está construyendo una base de fortaleza sostenible y auténtica. Con el tiempo, a medida que tu neuroquímica se restablezca, descubrirás un nivel de energía constante, confiable y completamente tuyo. Estás pasando de un estado de intensidad artificial a un estado de vitalidad natural, donde puedes afrontar la vida con la mente despejada y una fuente constante de poder genuino.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}

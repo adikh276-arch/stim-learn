@@ -1,0 +1,137 @@
+{
+  "app_title": "Mô-đun học tập",
+  "progress_label": "Tiến triển",
+  "back_label": "Mặt sau",
+  "minutes_label": "phút",
+  "type_article": "Bài báo",
+  "type_assessment": "Đánh giá",
+  "type_activity": "Hoạt động",
+  "substance_name": "Chất kích thích",
+  "DATA": {
+    "sections": [
+      {
+        "num": "01",
+        "title": "Cơ chế hoạt động của chất kích thích",
+        "articles": [
+          {
+            "id": "s1",
+            "title": "Não bộ khi sử dụng cocaine và methamphetamine",
+            "time": "5 min",
+            "type": "Bài báo",
+            "content": "<p>Các chất kích thích như cocaine và methamphetamine hoạt động bằng cách làm tăng đáng kể mức độ dopamine trong các mạch khen thưởng của não. Trong khi cocaine làm điều này bằng cách ngăn chặn sự tái hấp thu dopamine, methamphetamine còn tiến thêm một bước nữa bằng cách vừa ngăn chặn sự tái hấp thu vừa kích thích giải phóng một lượng lớn hơn. Điều này tạo ra một cảm giác hưng phấn, tự tin và vui sướng mãnh liệt ngay lập tức. Tuy nhiên, sự tăng đột biến nhân tạo này lại gây áp lực rất lớn lên não. Não bộ của bạn phản ứng bằng cách tắt các thụ thể dopamine của chính nó để tự bảo vệ khỏi sự kích thích quá mức. Sự suy giảm này là lý do tại sao cảm giác &quot;phê&quot; luôn đi kèm với cảm giác &quot;sụp đổ&quot; - một trạng thái kiệt sức, trầm cảm và cáu kỉnh sâu sắc. Theo thời gian, việc sử dụng thường xuyên có thể dẫn đến những thay đổi lâu dài trong cấu trúc và chức năng của não, ảnh hưởng đến trí nhớ, khả năng ra quyết định và điều chỉnh cảm xúc. Hiểu được chu kỳ đỉnh cao và sụp đổ này là điều cần thiết cho quá trình phục hồi. Nó giúp bạn nhận ra rằng những cảm giác chán nản tột độ mà bạn trải qua không phải là sự phản ánh tính cách của bạn, mà là hậu quả sinh học của tác động của thuốc lên hóa học thần kinh của bạn. Khi bạn cai nghiện, não bộ sẽ bắt đầu quá trình khôi phục chậm rãi sự cân bằng dopamine tự nhiên, cho phép bạn cuối cùng tìm thấy năng lượng và niềm vui thực sự trong cuộc sống mà không cần đến chất kích thích.</p>"
+          },
+          {
+            "id": "s2",
+            "title": "Lạm dụng Adderall — Khi việc kê đơn trở nên có vấn đề",
+            "time": "6 min",
+            "type": "Bài báo",
+            "content": "<p>Adderall và các loại thuốc kích thích theo toa khác rất hiệu quả trong điều trị ADHD, nhưng chúng tiềm ẩn nguy cơ lạm dụng và phụ thuộc cao. Lạm dụng xảy ra khi thuốc được dùng với liều lượng cao hơn chỉ định, được sử dụng bởi người không có đơn thuốc, hoặc được sử dụng cho các mục đích khác ngoài mục đích ban đầu—chẳng hạn như để học tập hoặc giảm cân. Vì những loại thuốc này được &quot;kê đơn&quot;, nhiều người lầm tưởng rằng chúng an toàn. Tuy nhiên, ở liều cao, chúng có thể gây ra các tác dụng tương tự như các chất kích thích mạnh khác, bao gồm tăng nhịp tim, tăng huyết áp và nguy cơ nghiện cao. Sự phụ thuộc thường phát triển một cách âm thầm; bạn có thể thấy mình cần thuốc để cảm thấy &quot;tỉnh táo&quot; hoặc để hoàn thành các công việc hàng ngày. Theo thời gian, bạn có thể thấy không thể hoạt động bình thường nếu thiếu thuốc, trải qua các triệu chứng cai nghiện nghiêm trọng như mệt mỏi và trầm cảm khi ngừng sử dụng. Nhận biết sự chuyển đổi từ sử dụng thuốc điều trị sang lạm dụng có vấn đề là một bước quan trọng. Nếu bạn tìm cách kê đơn lại sớm, sử dụng thuốc để đối phó với căng thẳng hoặc cảm thấy lo lắng về nguồn cung cấp thuốc của mình, đây là những dấu hiệu cho thấy sự phụ thuộc đã hình thành. Nhận thức được thực tế này là bước đầu tiên để hợp tác với chuyên gia chăm sóc sức khỏe nhằm quản lý sức khỏe một cách an toàn và xây dựng cuộc sống không còn phụ thuộc vào chất kích thích.</p>"
+          },
+          {
+            "id": "s3",
+            "title": "Chu kỳ sụp đổ được giải thích",
+            "time": "5 min",
+            "type": "Bài báo",
+            "content": "<p>Chu kỳ suy sụp là đặc điểm nổi bật của việc sử dụng chất kích thích, thể hiện giai đoạn ngay sau khi sử dụng quá liều hoặc sử dụng với liều lượng cao. Khi tác dụng của thuốc giảm dần, nồng độ dopamine trong não giảm mạnh, dẫn đến tình trạng kiệt quệ về thể chất và tinh thần. Giai đoạn suy sụp này được đặc trưng bởi sự mệt mỏi tột độ, thèm ăn tăng cao và cảm giác trầm cảm hoặc &quot;trống rỗng&quot; sâu sắc, lan tỏa. Bạn cũng có thể trải nghiệm sự cáu kỉnh dữ dội, lo lắng và thèm muốn mãnh liệt chất đó hơn nữa để thoát khỏi sự khó chịu. Chu kỳ này là điều duy trì chứng nghiện; nỗi đau của giai đoạn suy sụp thúc đẩy người dùng tìm kiếm cảm giác hưng phấn khác, tạo ra một vòng luẩn quẩn tự duy trì. Hiểu được giai đoạn suy sụp như một sự kiện sinh lý là rất quan trọng để định hướng quá trình phục hồi ban đầu. Đó là dấu hiệu cho thấy não bộ của bạn đang cố gắng điều chỉnh lại sau khi bị đẩy đến giới hạn. Trong thời gian này, bạn nên tập trung vào nghỉ ngơi, bổ sung nước và dinh dưỡng. Nhận ra rằng cảm giác tuyệt vọng dữ dội chỉ là tạm thời và do sinh học thúc đẩy có thể giúp bạn chống lại sự thôi thúc sử dụng lại. Mỗi lần bạn vượt qua được cơn khủng hoảng mà không quay lại sử dụng chất kích thích, bạn đang phá vỡ chu kỳ và cho phép não bộ tiến thêm một bước nữa hướng tới sự cân bằng tự nhiên và phục hồi lâu dài.</p>"
+          },
+          {
+            "id": "s4",
+            "title": "Chất kích thích và nguy cơ tim mạch",
+            "time": "7 min",
+            "type": "Bài báo",
+            "content": "<p>Một trong những mối nguy hiểm nghiêm trọng và tức thời nhất của việc sử dụng chất kích thích là áp lực mà nó gây ra cho hệ tim mạch. Chất kích thích hoạt động bằng cách kích hoạt phản ứng &quot;chiến đấu hoặc bỏ chạy&quot; của cơ thể, gây ra sự tăng đột biến nhịp tim và huyết áp. Mặc dù điều này tạo ra cảm giác tràn đầy năng lượng tạm thời, nhưng nó cũng buộc tim phải làm việc vất vả hơn và làm co thắt các mạch máu. Điều này có thể dẫn đến nhiều vấn đề sức khỏe nghiêm trọng, bao gồm tim đập nhanh, nhịp tim không đều (loạn nhịp tim), và làm tăng đáng kể nguy cơ đau tim và đột quỵ, ngay cả ở những người trẻ tuổi và khỏe mạnh. Sử dụng lâu dài có thể gây tổn thương vĩnh viễn cho cơ tim và lớp lót của mạch máu. Ngoài ra, chất kích thích thường được sử dụng kết hợp với các chất khác như rượu, điều này càng làm phức tạp và tăng nguy cơ tim mạch. Nếu bạn bị đau ngực, khó thở hoặc tim đập nhanh không chậm lại, điều quan trọng là phải tìm kiếm sự chăm sóc y tế ngay lập tức. Hiểu được những rủi ro này là động lực mạnh mẽ để lựa chọn một cuộc sống không có chất kích thích. Bằng cách bỏ thuốc lá, bạn sẽ ngay lập tức giảm bớt gánh nặng cho tim và cho phép hệ tim mạch bắt đầu quá trình phục hồi và bảo vệ sức khỏe lâu dài của bạn.</p>"
+          },
+          {
+            "id": "s5",
+            "title": "Sự phụ thuộc phát triển như thế nào",
+            "time": "7 min",
+            "type": "Đánh giá",
+            "content": "<p>Sự phụ thuộc vào chất kích thích phát triển thông qua sự kết hợp của những thay đổi sinh học trong não và sự củng cố các mô hình hành vi. Nó bắt đầu bằng sự thích nghi nhanh chóng của não bộ với sự tăng đột biến dopamine do thuốc gây ra. Để duy trì sự cân bằng, não bộ giảm sản xuất dopamine tự nhiên và số lượng thụ thể có sẵn. Điều này có nghĩa là theo thời gian, bạn cần liều lượng chất kích thích cao hơn chỉ để cảm thấy &quot;bình thường&quot; - một trạng thái được gọi là dung nạp. Đồng thời, hệ thống khen thưởng của não bộ trở nên nhạy cảm cao độ với bất kỳ tín hiệu nào liên quan đến thuốc - những người, địa điểm hoặc thậm chí thời điểm trong ngày - tạo ra sự thèm muốn mạnh mẽ và tự động. Phần hành vi của sự phụ thuộc là việc tích hợp thuốc vào cuộc sống của bạn như một cơ chế đối phó chính với căng thẳng, mệt mỏi hoặc các tình huống xã hội. Bạn bắt đầu tin rằng bạn &quot;cần&quot; chất đó để hoạt động hoặc để trở thành người mà bạn muốn trở thành. &quot;Mối đe dọa ba chiều&quot; này - dung nạp về thể chất, thèm muốn mãnh liệt và phụ thuộc về tâm lý - là điều khiến sự phụ thuộc vào chất kích thích trở nên mạnh mẽ. Nhận biết những giai đoạn này không phải là dấu hiệu của sự thất bại, mà là một cách để hiểu thách thức bạn đang phải đối mặt. Với sự hỗ trợ đúng đắn và cam kết thay đổi, bạn có thể đảo ngược những thói quen xấu này và xây dựng một cuộc sống thực sự khỏe mạnh và độc lập.</p>"
+          }
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Hạ cánh an toàn",
+        "articles": [
+          {
+            "id": "s6",
+            "title": "Xử lý va chạm một cách an toàn",
+            "time": "6 min",
+            "type": "Hoạt động",
+            "content": "<p>Việc kiểm soát cơn suy sụp sau khi sử dụng chất kích thích cần ưu tiên sự an toàn về thể chất và ổn định tinh thần trong giai đoạn dễ bị tổn thương nhất. Bước đầu tiên là đảm bảo bạn ở trong một môi trường an toàn, yên tĩnh để nghỉ ngơi. Cơ thể và não bộ của bạn đang bị suy kiệt nghiêm trọng và cần thời gian để bắt đầu quá trình phục hồi. Việc bổ sung nước rất cần thiết; hãy uống nhiều nước và các chất lỏng giàu chất điện giải để giúp hệ thống của bạn cân bằng lại. Dinh dưỡng cũng rất quan trọng, vì cảm giác thèm ăn thường quay trở lại mạnh mẽ trong cơn suy sụp; hãy tập trung vào các thực phẩm lành mạnh, giàu protein cung cấp năng lượng bền vững. Về mặt cảm xúc, hãy chuẩn bị tinh thần cho những cảm giác trầm cảm, lo lắng và cáu kỉnh dữ dội. Hãy luôn tự nhắc nhở bản thân rằng những cảm giác này là kết quả sinh học tạm thời của cơn suy sụp và chúng sẽ qua đi. Tránh đưa ra bất kỳ quyết định quan trọng nào trong cuộc sống hoặc tham gia vào các cuộc trò chuyện gây xung đột cao trong thời gian này. Liên hệ với một người bạn, thành viên gia đình hoặc một chuyên gia hiểu về quá trình phục hồi sau khi sử dụng chất kích thích có thể cung cấp một lớp bảo vệ và trách nhiệm quan trọng. Nếu bạn gặp các triệu chứng nghiêm trọng như ảo giác, suy nghĩ hoang tưởng hoặc ý định tự tử, hãy tìm kiếm sự trợ giúp y tế ngay lập tức. Kiểm soát cơn suy sụp một cách an toàn là một hành động tự chăm sóc bản thân và là bước đầu tiên để phá vỡ chu kỳ sử dụng.</p>"
+          },
+          {
+            "id": "s7",
+            "title": "Phục hồi giấc ngủ sau khi sử dụng chất kích thích",
+            "time": "6 min",
+            "type": "Hoạt động",
+            "content": "<p>Giấc ngủ thường là điều đầu tiên bị hy sinh trong chu kỳ sử dụng chất kích thích, và việc xây dựng lại một mô hình giấc ngủ lành mạnh là một trong những phần quan trọng nhất của quá trình phục hồi. Chất kích thích can thiệp vào chu kỳ ngủ - thức tự nhiên của não, dẫn đến các giai đoạn mất ngủ tiếp theo là những giấc ngủ dài, không sâu giấc và không phục hồi sức khỏe. Khi bạn ngừng sử dụng, cấu trúc giấc ngủ của bạn bắt đầu quá trình sửa chữa chậm. Ban đầu, bạn có thể trải qua một giai đoạn buồn ngủ quá mức khi cơ thể cố gắng phục hồi sau sự mệt mỏi tích lũy. Sau đó là một giai đoạn khó ngủ và khó duy trì giấc ngủ, vì hệ thần kinh của bạn vẫn ở trạng thái cảnh giác cao độ. Để hỗ trợ quá trình phục hồi giấc ngủ, hãy thiết lập một giờ thức dậy nhất quán và một thói quen thư giãn trước khi đi ngủ. Tránh caffeine và màn hình - điện thoại, máy tính bảng và TV - ít nhất một giờ trước khi đi ngủ. Đảm bảo phòng ngủ của bạn mát mẻ, tối và chỉ được sử dụng để ngủ. Nếu bạn thấy mình nằm trằn trọc và bực bội, hãy ra khỏi giường và thực hiện một hoạt động nhẹ nhàng trong ánh sáng yếu cho đến khi bạn cảm thấy thực sự buồn ngủ. Mặc dù có thể mất vài tuần để giấc ngủ của bạn thực sự có tác dụng phục hồi, nhưng việc kiên trì duy trì những thói quen lành mạnh này sẽ cho phép não bộ của bạn trở lại nhịp điệu tự nhiên, mang lại cho bạn năng lượng và sự minh mẫn cần thiết để phục hồi lâu dài.</p>"
+          },
+          {
+            "id": "s8",
+            "title": "Hỗ trợ dinh dưỡng trong quá trình phục hồi",
+            "time": "6 min",
+            "type": "Bài báo",
+            "content": "<p>Việc sử dụng chất kích thích thường dẫn đến việc bỏ bê dinh dưỡng, vì thuốc làm giảm cảm giác thèm ăn và khiến người dùng chỉ tập trung vào cảm giác hưng phấn tiếp theo. Phục hồi sức khỏe thông qua dinh dưỡng hợp lý là một phần nền tảng của quá trình hồi phục. Não bộ và cơ thể bạn đã bị thiếu hụt các chất dinh dưỡng thiết yếu, đặc biệt là những chất cần thiết cho việc sản xuất chất dẫn truyền thần kinh và sức khỏe tim mạch. Hãy tập trung vào chế độ ăn giàu protein chất lượng cao – như trứng, cá và thịt nạc – cung cấp các axit amin mà não bộ cần để tái tạo mức dopamine. Chất béo lành mạnh, có trong bơ, các loại hạt và dầu ô liu, rất cần thiết cho chức năng não và sửa chữa tế bào. Carbohydrate phức tạp, chẳng hạn như ngũ cốc nguyên hạt và rau củ, cung cấp năng lượng ổn định và giúp ổn định tâm trạng. Việc giữ đủ nước suốt cả ngày cũng rất quan trọng. Bạn có thể thấy rằng cảm giác thèm ăn quay trở lại mạnh mẽ trong giai đoạn đầu hồi phục; thay vì tìm đến các thực phẩm chế biến sẵn, nhiều đường dẫn đến tình trạng suy giảm năng lượng, hãy hướng đến các bữa ăn và bữa ăn nhẹ cân bằng. Hỗ trợ dinh dưỡng không chỉ liên quan đến sức khỏe thể chất; đó còn là cách trực tiếp hỗ trợ sự ổn định cảm xúc và sự minh mẫn về nhận thức của bạn. Bằng cách cung cấp cho cơ thể nguồn năng lượng cần thiết, bạn đang tạo nền tảng vững chắc cho quá trình phục hồi đầy khó khăn và xây dựng một tương lai tràn đầy sức sống và nghị lực.</p>"
+          },
+          {
+            "id": "s9",
+            "title": "Sức khỏe tâm thần trong những ngày sau khi sử dụng",
+            "time": "8 min",
+            "type": "Bài báo",
+            "content": "<p>Những ngày sau khi sử dụng chất kích thích thường được đánh dấu bằng một &quot;gánh nặng cảm xúc&quot; đáng kể khi não bộ của bạn phải vật lộn để tìm lại sự cân bằng. Bạn có thể trải qua một loạt các vấn đề về sức khỏe tâm thần, bao gồm trầm cảm nặng, lo lắng dữ dội, cáu kỉnh và thiếu động lực hoặc niềm vui lan tỏa - một tình trạng được gọi là chứng mất khả năng cảm nhận niềm vui (anhedonia). Điều quan trọng là phải hiểu rằng những cảm giác này là kết quả sinh học trực tiếp của sự suy giảm dopamine nghiêm trọng do thuốc gây ra. Chúng không phải là dấu hiệu cho thấy bạn vốn dĩ là người trầm cảm hoặc lo lắng, hoặc bạn đang thất bại trong quá trình hồi phục. Đây là những trạng thái tạm thời sẽ dần được cải thiện khi hóa học thần kinh của bạn được thiết lập lại. Để vượt qua giai đoạn này, hãy cực kỳ kiên nhẫn và cảm thông với bản thân. Tránh tự chỉ trích và cô lập. Tham gia vào các hoạt động nhỏ, dễ quản lý và đòi hỏi sự tập trung có thể giúp làm dịu tâm trí lo lắng. Tìm đến một nhà tư vấn hoặc nhóm hỗ trợ sẽ cung cấp một không gian an toàn để chia sẻ những cảm xúc này với những người khác hiểu được. Nếu bạn cảm thấy trầm cảm quá mức hoặc có ý nghĩ tự làm hại bản thân, hãy tìm kiếm sự giúp đỡ chuyên nghiệp ngay lập tức. Hãy nhớ rằng sự trống rỗng và tuyệt vọng mà bạn cảm thấy hôm nay không phải là thực tại vĩnh viễn của bạn. Với thời gian và sự kiêng cữ liên tục, khả năng cảm nhận niềm vui, động lực và sự ổn định cảm xúc của bạn sẽ trở lại.</p>"
+          },
+          {
+            "id": "s10",
+            "title": "Nguyên tắc cơ bản về giảm thiểu tác hại",
+            "time": "7 min",
+            "type": "Bài báo",
+            "content": "<p>Mục tiêu cuối cùng của quá trình cai nghiện là hoàn toàn không sử dụng chất kích thích, nhưng hiểu biết về giảm thiểu tác hại là một phần thiết yếu để đảm bảo an toàn trong khi bạn hướng tới mục tiêu đó. Giảm thiểu tác hại là việc giảm thiểu những hậu quả tiêu cực của việc sử dụng ma túy đối với những người chưa thể hoặc chưa sẵn sàng ngừng sử dụng. Các chiến lược cơ bản bao gồm không bao giờ sử dụng một mình – luôn có người bên cạnh để gọi trợ giúp nếu cần – và luôn có kế hoạch xử lý khi cơ thể sắp kiệt sức. Uống đủ nước và cố gắng ăn dù chỉ một lượng nhỏ cũng có thể giảm bớt căng thẳng cho cơ thể. Điều quan trọng nữa là phải nhận thức được môi trường bạn sử dụng và tránh những tình huống rủi ro cao, nơi bạn dễ sử dụng nhiều hơn dự định. Hiểu rõ rủi ro khi kết hợp chất kích thích với các chất khác, đặc biệt là rượu hoặc các loại ma túy khác, là điều cần thiết để ngăn ngừa quá liều và các biến cố tim mạch. Mang theo thông tin liên lạc của các dịch vụ giảm thiểu tác hại địa phương và trợ giúp y tế khẩn cấp là một bước đơn giản nhưng có thể cứu sống người sử dụng. Giảm thiểu tác hại không phải là dung túng việc sử dụng ma túy; mà là trân trọng mạng sống con người và cung cấp sự an toàn và hỗ trợ cần thiết để cuối cùng giúp ai đó lựa chọn một con đường lành mạnh hơn. Sự an toàn của bạn là điều quan trọng, và ngay cả những bước nhỏ để giảm thiểu rủi ro cũng là một hành động tự chăm sóc bản thân hiệu quả trên hành trình phục hồi.</p>"
+          }
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Phục hồi dài hạn",
+        "articles": [
+          {
+            "id": "s11",
+            "title": "Phá vỡ thói quen ăn uống vô độ",
+            "time": "7 min",
+            "type": "Hoạt động",
+            "content": "<p>Nhiều người sử dụng chất kích thích nhận thấy mình mắc kẹt trong vòng luẩn quẩn &quot;sử dụng quá liều và suy sụp&quot; - sử dụng thuốc với liều lượng lớn trong nhiều ngày, sau đó suy sụp trong một khoảng thời gian tương tự. Phá vỡ vòng luẩn quẩn này thường là bước đầu tiên khó khăn nhất trong quá trình phục hồi. Nó đòi hỏi một sự thay đổi cơ bản trong cách bạn nhìn nhận chất gây nghiện và cam kết phá vỡ chu kỳ càng sớm càng tốt. Hãy bắt đầu bằng cách xác định các dấu hiệu cảnh báo sớm cho thấy bạn đang lên kế hoạch sử dụng quá liều - những suy nghĩ, cảm xúc hoặc tín hiệu xã hội nhất định luôn dẫn đến việc sử dụng thuốc. Khi bạn nhận ra những tác nhân kích thích này, bạn có thể lập kế hoạch &quot;tạm dừng&quot;. Điều này có thể có nghĩa là rời khỏi một địa điểm có nguy cơ cao, gọi ngay cho người hỗ trợ hoặc tham gia vào một hoạt động đã được lên kế hoạch trước hoàn toàn không liên quan đến việc sử dụng thuốc. Mục tiêu là tạo ra một khoảng dừng giữa sự thôi thúc và hành động. Việc giải quyết các nguyên nhân cơ bản của việc sử dụng quá liều cũng rất hữu ích - cho dù đó là để trốn tránh căng thẳng, để đối phó với sự cô đơn, hay để tìm kiếm cảm giác thỏa mãn mãnh liệt. Thay thế việc sử dụng quá liều bằng một loạt các thói quen lành mạnh nhỏ, nhất quán có thể giúp ổn định hóa học thần kinh của bạn và giảm sức hút của vòng luẩn quẩn &quot;đỉnh cao và suy sụp&quot;. Mỗi lần bạn quyết định không ăn uống vô độ, bạn đang làm suy yếu một thói quen mạnh mẽ và xây dựng các kỹ năng tự điều chỉnh cần thiết cho sự phục hồi lâu dài.</p>"
+          },
+          {
+            "id": "s12",
+            "title": "Tái tạo Dopamine một cách tự nhiên",
+            "time": "8 min",
+            "type": "Bài báo",
+            "content": "<p>Việc sử dụng chất kích thích khiến hệ thống dopamine trong não rơi vào trạng thái cạn kiệt nghiêm trọng, dẫn đến cảm giác uể oải và mất hứng thú trong các hoạt động thường ngày. Việc phục hồi mức dopamine một cách tự nhiên là một quá trình chậm nhưng vô cùng bổ ích. Nó bao gồm việc tham gia vào các hoạt động mang lại cảm giác thỏa mãn thực sự, bền vững mà không gây ra sự suy sụp đột ngột như khi sử dụng chất kích thích. Tập thể dục là một trong những cách hiệu quả nhất để tăng cường dopamine và cải thiện tâm trạng; ngay cả một cuộc đi bộ ngắn hàng ngày hoặc một buổi tập yoga cũng có thể tạo ra sự khác biệt đáng kể. Các dự án sáng tạo, dù là nấu ăn, vẽ tranh hay viết lách, đều mang lại cảm giác thành tựu và sự trôi chảy tự nhiên. Dành thời gian hòa mình vào thiên nhiên và nuôi dưỡng các mối quan hệ xã hội chân thành cũng kích thích các trung tâm khen thưởng của não một cách lành mạnh và cân bằng. Việc đặt mục tiêu – và những chiến thắng nhỏ hàng ngày đi kèm – là một công cụ mạnh mẽ khác để phục hồi dopamine. Hãy bắt đầu với những mục tiêu nhỏ, khả thi và ăn mừng thành công của bạn. Điều quan trọng là phải kiên nhẫn; hệ thống khen thưởng tự nhiên của bạn sẽ không được thiết lập lại chỉ sau một đêm. Bạn có thể cảm thấy “dạy dỗi” trong vài tuần hoặc thậm chí vài tháng, nhưng đây chỉ là giai đoạn tạm thời. Bằng cách liên tục lựa chọn những nguồn phần thưởng tự nhiên, bạn đang giúp não bộ tái khám phá khả năng cảm nhận niềm vui và xây dựng một cuộc sống trọn vẹn và mạnh mẽ.</p>"
+          },
+          {
+            "id": "s13",
+            "title": "Chất kích thích và các mối quan hệ",
+            "time": "8 min",
+            "type": "Bài báo",
+            "content": "<p>Việc sử dụng chất kích thích có thể gây ảnh hưởng nghiêm trọng đến các mối quan hệ, thường được đặc trưng bởi sự mất lòng tin, xung đột gia tăng và sự xa cách về mặt cảm xúc. Sự tập trung cao độ vào việc tìm kiếm và sử dụng chất gây nghiện, kết hợp với sự bất ổn của chu kỳ đỉnh điểm và suy sụp, khiến người khác khó lòng quan tâm đến nhu cầu của mình. Để hàn gắn những mối quan hệ này, trước tiên bạn phải cam kết với sự ổn định và phục hồi của chính mình. Sự hàn gắn thực sự cần nhiều hơn chỉ là một lời xin lỗi; nó đòi hỏi sự thay đổi hành vi nhất quán theo thời gian. Giá trị của lòng tin nằm ở sự đáng tin cậy. Bằng cách xuất hiện đúng giờ như đã hứa, thành thật về những khó khăn của mình và luôn hiện diện trong các tương tác, bạn đang dần xây dựng lại cầu nối với những người bạn yêu thương. Điều quan trọng nữa là phải có những cuộc trò chuyện thẳng thắn về những tổn hại mà việc sử dụng chất gây nghiện của bạn gây ra, cho người kia không gian để bày tỏ cảm xúc của họ mà không trở nên phòng thủ. Một số mối quan hệ có thể đã trở nên quá độc hại hoặc quá xoay quanh việc sử dụng chất gây nghiện để có thể là một phần của cuộc sống mới của bạn, và việc nhận diện những mối quan hệ này là một phần đau đớn nhưng cần thiết của quá trình phục hồi. Đối với những mối quan hệ bạn chọn giữ lại, hãy kiên nhẫn; lòng tin được xây dựng từng chút một và mất đi rất nhanh. Khi bạn hồi phục, bạn sẽ thấy các mối quan hệ của mình trở nên sâu sắc và chân thành hơn vì chúng dựa trên con người thật của bạn, chứ không phải con người mà chất kích thích đã tạo nên.</p>"
+          },
+          {
+            "id": "s14",
+            "title": "Phục hồi nhận thức — Những điều cần biết",
+            "time": "7 min",
+            "type": "Bài báo",
+            "content": "<p>Sử dụng chất kích thích lâu dài có thể ảnh hưởng đáng kể đến các chức năng nhận thức như trí nhớ, sự chú ý và khả năng ra quyết định. Phục hồi nhận thức là quá trình não bộ tự sửa chữa các chức năng này khi bạn cai nghiện. Trong những tuần và tháng đầu tiên, bạn có thể trải nghiệm &quot;sương mù não&quot; - cảm giác chậm chạp về tinh thần, khó tập trung và thỉnh thoảng quên. Điều quan trọng là phải hiểu rằng đây là một phần bình thường của quá trình hồi phục. Về cơ bản, não bộ của bạn đang &quot;học lại&quot; cách xử lý thông tin mà không cần sự kích thích nhân tạo của thuốc. Để hỗ trợ quá trình phục hồi nhận thức, hãy tham gia vào các hoạt động thử thách trí óc một cách nhẹ nhàng và hỗ trợ - đọc sách, giải câu đố hoặc học một kỹ năng mới đơn giản. Duy trì lịch ngủ đều đặn và uống đủ nước cũng trực tiếp hỗ trợ sức khỏe não bộ. Tập thể dục đã được chứng minh là cải thiện chức năng nhận thức và thậm chí kích thích sự phát triển của các đường dẫn thần kinh mới. Hãy kiên nhẫn với bản thân; bạn sẽ không cảm thấy &quot;tinh thần minh mẫn&quot; mỗi ngày. Tuy nhiên, với việc tiếp tục kiêng cữ và tập trung vào sức khỏe tổng thể, hầu hết mọi người nhận thấy sự minh mẫn về nhận thức của họ trở lại đáng kể trong năm đầu tiên phục hồi. Bạn không chỉ đơn thuần là &quot;cai nghiện&quot;; Bạn đang tích cực khôi phục khả năng tư duy mạch lạc, tập trung chú ý và đưa ra quyết định sáng suốt của não bộ.</p>"
+          },
+          {
+            "id": "s15",
+            "title": "Tìm kiếm nguồn năng lượng mà không cần chất kích thích",
+            "time": "7 min",
+            "type": "Bài báo",
+            "content": "<p>Một trong những thách thức phổ biến nhất trong quá trình cai nghiện chất kích thích là tìm lại năng lượng và động lực để đối mặt với một ngày mới mà không cần đến sự hỗ trợ của hóa chất. Ban đầu, bạn có thể cảm thấy vô cùng mệt mỏi và uể oải, khi cơ thể và não bộ đang hồi phục sau sự hao tổn năng lượng cực độ do sử dụng chất kích thích. Tìm lại năng lượng tự nhiên bắt đầu từ những điều cơ bản: ngủ đủ giấc, dinh dưỡng cân bằng và hoạt động thể chất thường xuyên. Một thói quen buổi sáng đều đặn, bao gồm bữa sáng lành mạnh và đi bộ ngắn, có thể giúp báo hiệu cho cơ thể rằng đã đến lúc thức dậy. Việc tìm kiếm nguồn động lực trong cuộc sống cũng rất hữu ích; tìm những nhiệm vụ và mục tiêu thực sự thu hút bạn có thể mang lại động lực tự nhiên. Chia nhỏ các nhiệm vụ lớn thành các bước nhỏ, dễ quản lý để tránh cảm giác quá tải. Quan trọng nhất, hãy cho phép bản thân tiến bước chậm hơn trong giai đoạn đầu hồi phục. Bạn không phải là phiên bản &quot;thất bại&quot; của chính mình trước đây khi tràn đầy năng lượng và sử dụng chất kích thích; bạn là một con người kiên cường đang xây dựng nền tảng sức mạnh bền vững và chân thực. Theo thời gian, khi hệ thần kinh của bạn được thiết lập lại, bạn sẽ khám phá ra một mức năng lượng ổn định, đáng tin cậy và hoàn toàn thuộc về chính mình. Bạn đang chuyển từ trạng thái căng thẳng nhân tạo sang trạng thái sức sống tự nhiên, nơi bạn có thể đối mặt với cuộc sống với đầu óc minh mẫn và nguồn năng lượng đích thực ổn định.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}

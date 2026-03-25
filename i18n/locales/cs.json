@@ -1,0 +1,137 @@
+{
+  "app_title": "Modul Učení",
+  "progress_label": "Pokrok",
+  "back_label": "Zadní",
+  "minutes_label": "min.",
+  "type_article": "Článek",
+  "type_assessment": "Posouzení",
+  "type_activity": "Aktivita",
+  "substance_name": "Stimulanty",
+  "DATA": {
+    "sections": [
+      {
+        "num": "01",
+        "title": "Jak fungují stimulanty",
+        "articles": [
+          {
+            "id": "s1",
+            "title": "Mozek na kokainu a pervitinu",
+            "time": "5 min",
+            "type": "Článek",
+            "content": "<p>Stimulanty jako kokain a metamfetamin fungují tak, že dramaticky zvyšují hladiny dopaminu v mozkových odměňovacích okruzích. Zatímco kokain to dělá blokováním reabsorpce dopaminu, metamfetamin jde ještě o krok dál tím, že blokuje reabsorpci a stimuluje ještě masivnější uvolňování. To vytváří intenzivní, okamžitý nával energie, sebevědomí a euforie. Tento umělý nárůst je však pro mozek extrémně náročný. Váš mozek reaguje vypnutím vlastních dopaminových receptorů, aby se ochránil před ohromující stimulací. Toto vyčerpání je důvodem, proč po „opojení“ nevyhnutelně následuje „krach“ – stav hlubokého vyčerpání, deprese a podrážděnosti. Pravidelné užívání může časem vést k dlouhodobým změnám ve struktuře a funkci mozku, které ovlivňují paměť, rozhodování a regulaci emocí. Pochopení tohoto cyklu vrcholů a pádů je nezbytné pro zotavení. Pomůže vám to uvědomit si, že intenzivní poklesy, které pociťujete, nejsou odrazem vaší osobnosti, ale biologickým důsledkem vlivu drogy na vaši neurochemii. Jakmile přestanete kouřit, váš mozek zahájí pomalý proces obnovy přirozené rovnováhy dopaminu, což vám nakonec umožní najít skutečnou energii a radost ze života bez potřeby stimulantů.</p>"
+          },
+          {
+            "id": "s2",
+            "title": "Zneužívání Adderallu – když se předepsané léky stanou problematickými",
+            "time": "6 min",
+            "type": "Článek",
+            "content": "<p>Adderall a další léky na předpis jsou vysoce účinné při léčbě ADHD, ale nesou vysoký potenciál pro zneužití a závislost. K zneužití dochází, když je lék užíván ve vyšších dávkách, než je předepsáno, užíván někým bez lékařského předpisu nebo používán k jiným účelům, než je zamýšleno – například ke studiu nebo hubnutí. Protože jsou tyto léky „na předpis“, mnoho lidí se mylně domnívá, že jsou ze své podstaty bezpečné. Ve vysokých dávkách však mohou mít podobné účinky jako jiné silné stimulanty, včetně zvýšené tepové frekvence, zvýšeného krevního tlaku a vysokého rizika závislosti. Závislost se často rozvíjí nenápadně; můžete zjistit, že lék potřebujete, abyste se cítili „bystře“ nebo abyste zvládali své každodenní úkoly. Postupem času se může stát, že bez něj nebudete moci fungovat a po vysazení se u vás objeví významné abstinenční příznaky, jako je únava a deprese. Rozpoznání přechodu od terapeutického užívání k problematickému zneužívání je zásadním krokem. Pokud si brzy vyhledáváte náhrady léků, užíváte léky k vyrovnání se stresem nebo máte obavy o své zásoby, jsou to signály, že se vytvořila závislost. Uznání této reality je prvním krokem ke spolupráci se zdravotnickým pracovníkem, abyste bezpečně pečovali o své zdraví a vybudovali si život bez nutnosti zneužívání stimulantů.</p>"
+          },
+          {
+            "id": "s3",
+            "title": "Vysvětlení cyklu krachů",
+            "time": "5 min",
+            "type": "Článek",
+            "content": "<p>Cyklus nárůstu je určujícím rysem užívání stimulantů a představuje období bezprostředně následující po záchvatu nebo období vysoké konzumace. Jak účinky drogy odeznívají, hladina dopaminu v mozku prudce klesá, což vede ke stavu hlubokého fyzického a emocionálního vyčerpání. Tento nárůst je charakterizován extrémní únavou, zvýšenou chutí k jídlu a hlubokým, všudypřítomným pocitem deprese neboli „otupělosti“. Můžete také pociťovat intenzivní podrážděnost, úzkost a ohromnou touhu po další látce, abyste unikli nepohodlí. Tento cyklus udržuje závislost; bolest z nárůstu nutí uživatele hledat další opojení a vytváří tak samovolně se opakující smyčku. Pochopení nárůstu jako fyziologické události je klíčové pro včasné zotavení. Je to znamení, že se váš mozek pokouší rekalibrovat poté, co byl tlačen na své hranice. Během této doby byste se měli zaměřit na odpočinek, hydrataci a výživu. Uznání, že intenzivní pocity zoufalství jsou dočasné a biologicky podmíněné, vám může pomoci odolat nutkání znovu užít. Pokaždé, když projdete krizí, aniž byste se vrátili ke stimulantům, přerušíte cyklus a umožníte svému mozku udělat další krok k přirozené rovnováze a trvalému zotavení.</p>"
+          },
+          {
+            "id": "s4",
+            "title": "Stimulanty a kardiovaskulární riziko",
+            "time": "7 min",
+            "type": "Článek",
+            "content": "<p>Jedním z nejvýznamnějších a bezprostředních nebezpečí užívání stimulantů je zátěž, kterou kladou na kardiovaskulární systém. Stimulanty fungují tak, že aktivují v těle reakci „bojuj, nebo uteč“, což způsobuje prudké zvýšení srdeční frekvence a krevního tlaku. To sice vytváří dočasný pocit energie, ale také nutí srdce pracovat mnohem usilovněji a stahuje cévy. To může vést k řadě vážných zdravotních problémů, včetně bušení srdce, nepravidelného srdečního rytmu (arytmií) a výrazně zvýšeného rizika infarktů a mrtvic, a to i u mladých a jinak zdravých jedinců. Dlouhodobé užívání může způsobit trvalé poškození srdečního svalu a výstelky cév. Je také běžné, že se stimulanty užívají v kombinaci s jinými látkami, jako je alkohol, což dále komplikuje a zvyšuje kardiovaskulární riziko. Pokud pociťujete bolest na hrudi, dušnost nebo zrychlený srdeční tep, který se nezpomaluje, je nezbytné okamžitě vyhledat lékařskou pomoc. Pochopení těchto rizik je silným motivátorem pro volbu života bez stimulantů. Tím, že přestanete kouřit, okamžitě snížíte zátěž svého srdce a umožníte svému kardiovaskulárnímu systému zahájit práci na hojení a ochraně vašeho dlouhodobého zdraví.</p>"
+          },
+          {
+            "id": "s5",
+            "title": "Jak se vyvíjí závislost",
+            "time": "7 min",
+            "type": "Posouzení",
+            "content": "<p>Závislost na stimulantech se rozvíjí kombinací biologických změn v mozku a posílením behaviorálních vzorců. Začíná rychlou adaptací mozku na masivní dopaminové návaly způsobené drogou. Aby mozek udržel rovnováhu, snižuje svou přirozenou produkci dopaminu a počet dostupných receptorů. To znamená, že v průběhu času potřebujete vyšší dávku stimulantů, abyste se cítili „normálně“ – stav známý jako tolerance. Zároveň se systém odměňování v mozku stává vysoce citlivým na jakékoli podněty spojené s drogou – určité lidi, místa nebo dokonce denní dobu – což vytváří silné, automatické řízy. Behaviorální část závislosti spočívá v integraci drogy do vašeho života jako primárního mechanismu zvládání stresu, únavy nebo sociálních situací. Začnete věřit, že látku „potřebujete“, abyste fungovali nebo abyste byli osobou, kterou chcete být. Tato „trojitá hrozba“ fyzické tolerance, zvýšené chuti a psychické závislosti je to, co dělá závislost na stimulantech tak silnou. Rozpoznání těchto fází není známkou selhání, ale způsobem, jak pochopit výzvu, které čelíte. Se správnou podporou a odhodláním ke změně můžete tyto vzorce zvrátit a vybudovat si skutečně zdravý a nezávislý život.</p>"
+          }
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Bezpečný sestup",
+        "articles": [
+          {
+            "id": "s6",
+            "title": "Bezpečné zvládnutí nehody",
+            "time": "6 min",
+            "type": "Aktivita",
+            "content": "<p>Zvládání pádu po užití stimulantů spočívá v upřednostňování fyzické bezpečnosti a emoční stability během období extrémní zranitelnosti. Prvním krokem je zajistit, abyste se nacházeli v bezpečném a klidném prostředí, kde si můžete odpočinout. Vaše tělo a mozek jsou hluboce vyčerpané a potřebují čas na zahájení procesu zotavení. Hydratace je nezbytná; pijte dostatek vody a tekutin bohatých na elektrolyty, abyste pomohli svému systému znovu vyvážit rovnováhu. Výživa je také důležitá, protože vaše chuť k jídlu se během pádu často vrací s pomstou; zaměřte se na zdravé potraviny bohaté na bílkoviny, které dodávají trvalou energii. Z emocionálního hlediska buďte připraveni na intenzivní pocity deprese, úzkosti a podrážděnosti. Neustále si připomínejte, že tyto pocity jsou dočasným, biologickým důsledkem pádu a že pominou. Během této doby se vyhýbejte jakýmkoli důležitým životním rozhodnutím nebo konfliktním rozhovorům. Kontaktování podpůrného přítele, člena rodiny nebo odborníka, který rozumí zotavování se ze stimulantů, může poskytnout zásadní vrstvu bezpečí a odpovědnosti. Pokud se u vás objeví závažné příznaky, jako jsou halucinace, paranoidní myšlenky nebo sebevražedné myšlenky, okamžitě vyhledejte lékařskou pomoc. Bezpečné zvládnutí nehody je aktem péče o sebe a prvním krokem k prolomení cyklu užívání.</p>"
+          },
+          {
+            "id": "s7",
+            "title": "Obnova spánku po užívání stimulantů",
+            "time": "6 min",
+            "type": "Aktivita",
+            "content": "<p>Spánek je často první věcí, která je v cyklu užívání stimulantů obětována, a obnovení zdravého spánkového režimu je jednou z nejdůležitějších součástí regenerace. Stimulanty narušují přirozený cyklus spánku a bdění v mozku, což vede k obdobím nespavosti, po nichž následují dlouhé „náhlé spánky“, které nejsou regenerační. Když přestanete stimulanty užívat, vaše spánková architektura zahájí pomalý proces regenerace. Nejprve můžete zažít období nadměrné ospalosti, kdy se vaše tělo snaží zotavit z nahromaděné únavy. Následuje období, kdy může být obtížné usnout a udržet si spánek, protože váš nervový systém zůstává ve stavu vysoké pohotovosti. Pro podporu regenerace spánku si nastavte pravidelný čas probuzení a relaxační režim před spaním. Vyhýbejte se kofeinu a obrazovkám – telefonům, tabletům a televizorům – alespoň hodinu před spaním. Ujistěte se, že vaše ložnice je chladná, tmavá a používá se pouze ke spánku. Pokud se ocitnete vzhůru a frustrovaní, vstaňte z postele a věnujte se klidné aktivitě při slabém osvětlení, dokud se nebudete cítit skutečně ospalí. I když může trvat několik týdnů, než se váš spánek stane skutečně regeneračním, vytrvání v dodržování těchto zdravých návyků umožní vašemu mozku vrátit se do svého přirozeného rytmu a dodá vám energii a jasnost, které potřebujete pro trvalé zotavení.</p>"
+          },
+          {
+            "id": "s8",
+            "title": "Nutriční podpora během rekonvalescence",
+            "time": "6 min",
+            "type": "Článek",
+            "content": "<p>Užívání stimulantů často vede k zanedbávání výživy, protože droga potlačuje chuť k jídlu a pozornost zůstává na dalším maximu. Obnova zdraví správnou výživou je základní součástí rekonvalescence. Váš mozek a tělo byly vyčerpány o esenciální živiny, zejména ty, které jsou potřebné pro produkci neurotransmiterů a kardiovaskulární zdraví. Zaměřte se na stravu bohatou na vysoce kvalitní bílkoviny – jako jsou vejce, ryby a libové maso – které poskytují aminokyseliny, které váš mozek potřebuje k obnově hladiny dopaminu. Zdravé tuky, které se nacházejí v avokádu, ořeších a olivovém oleji, jsou nezbytné pro funkci mozku a opravu buněk. Komplexní sacharidy, jako jsou celozrnné výrobky a zelenina, poskytují stabilní energii a pomáhají stabilizovat náladu. Je také důležité zůstat dobře hydratovaný po celý den. V rané fázi rekonvalescence se může stát, že se vám chuť k jídlu vrátí s velkou razancí; místo toho, abyste sahali po zpracovaných potravinách s vysokým obsahem cukru, které vedou k energetickým výpadkům, se zaměřte na vyvážená jídla a svačiny. Nutriční podpora se netýká jen fyzického zdraví; je to způsob, jak přímo podpořit vaši emoční stabilitu a kognitivní jasnost. Tím, že svému tělu dodáte palivo, které potřebuje, vytváříte pevný základ pro tvrdou práci na zotavení a budování budoucnosti plné skutečné vitality a síly.</p>"
+          },
+          {
+            "id": "s9",
+            "title": "Duševní zdraví ve dnech po užívání",
+            "time": "8 min",
+            "type": "Článek",
+            "content": "<p>Dny následující po užití stimulantů jsou často poznamenány značnou „emoční zátěží“, protože váš mozek se snaží najít rovnováhu. Můžete zažít řadu problémů s duševním zdravím, včetně hluboké deprese, intenzivní úzkosti, podrážděnosti a všudypřítomného nedostatku motivace nebo potěšení – stavu známého jako anhedonie. Je důležité si uvědomit, že tyto pocity jsou přímým biologickým důsledkem masivního vyčerpání dopaminu způsobeného drogou. Nejsou známkou toho, že jste přirozeně depresivní nebo úzkostlivý člověk, nebo že se vám nedaří zotavit se. Jedná se o dočasné stavy, které se budou postupně zlepšovat, jakmile se vaše neurochemie resetuje. Abyste toto období zvládli, buďte k sobě extrémně trpěliví a soucitní. Vyhněte se sebekritice a izolaci. Zapojení se do malých, zvládnutelných aktivit, které vyžadují soustředění, může pomoci uklidnit úzkostnou mysl. Kontaktování poradce nebo podpůrné skupiny poskytuje bezpečný prostor pro sdílení těchto pocitů s ostatními, kteří vám rozumí. Pokud se vaše deprese zdá být ohromující nebo pokud máte myšlenky na sebepoškozování, okamžitě vyhledejte odbornou pomoc. Pamatujte, že otupělost a zoufalství, které dnes cítíte, nejsou vaší trvalou realitou. S časem a pokračující abstinencí se vaše schopnost radosti, motivace a emoční stability vrátí.</p>"
+          },
+          {
+            "id": "s10",
+            "title": "Základy snižování škod",
+            "time": "7 min",
+            "type": "Článek",
+            "content": "<p>Zatímco konečným cílem zotavení je úplná abstinence od stimulantů, pochopení snižování škod je zásadní součástí bezpečnosti při práci na dosažení tohoto cíle. Snižování škod spočívá v minimalizaci negativních důsledků užívání drog pro ty, kteří s užíváním ještě nejsou schopni nebo ochotni přestat. Mezi základní strategie patří nikdy neužívat drogy sami – mít přítomnou někoho, kdo může v případě potřeby přivolat pomoc – a mít vždy připravený plán pro zvládnutí náhlého úrazu. Dodržování pitného režimu a snaha o konzumaci i malého množství jídla může snížit část fyzické zátěže vašeho těla. Je také důležité si být vědom prostředí, ve kterém drogy užíváte, a vyhýbat se rizikovým situacím, kdy je pravděpodobnější, že užijete více, než zamýšlíte. Pochopení rizik kombinace stimulantů s jinými látkami, zejména s alkoholem nebo jinými drogami, je nezbytné pro prevenci předávkování a kardiovaskulárních příhod. Nošení kontaktních informací na místní služby snižování škod a pohotovostní lékařskou pomoc je jednoduchý, ale život zachraňující krok. Snižování škod neznamená schvalování užívání drog; jde o vážení si lidského života a poskytování bezpečí a podpory, které někdo potřebuje, aby si nakonec zvolil zdravější cestu. Na vaší bezpečnosti záleží a i malé kroky ke snížení rizika jsou silným aktem péče o sebe na cestě k uzdravení.</p>"
+          }
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Dlouhodobé zotavení",
+        "articles": [
+          {
+            "id": "s11",
+            "title": "Prolomení vzorce záchvatovitého užívání drog",
+            "time": "7 min",
+            "type": "Aktivita",
+            "content": "<p>Mnoho lidí, kteří užívají stimulanty, se ocitne v pasti „záchvatu a pádu“ – drogu užívají intenzivně po několik dní a poté se na stejně dlouhou dobu zhroutí. Prolomení tohoto vzorce je často nejtěžším prvním krokem k uzdravení. Vyžaduje zásadní změnu v pohledu na látku a závazek přerušit tento cyklus co nejdříve. Začněte identifikací včasných varovných signálů, že se plánuje záchvat – určité myšlenky, pocity nebo sociální signály, které vždy vedou k užívání. Jakmile tyto spouštěče rozpoznáte, můžete si vytvořit plán „dočasného řešení“. To může znamenat opuštění rizikového místa, okamžité zavolání osoby poskytující podporu nebo zapojení se do předem naplánované aktivity, která s užíváním drog vůbec nesouvisí. Cílem je vytvořit pauzu mezi nutkáním a akcí. Je také užitečné řešit základní příčiny záchvatu – ať už jde o únik před stresem, způsob, jak zvládat osamělost, nebo hledání intenzivní odměny. Nahrazení záchvatu řadou malých, důsledných zdravých návyků může pomoci stabilizovat vaši neurochemii a snížit přitažlivost „vrcholu a pádu“. Pokaždé, když se rozhodnete nepřejídat se, oslabujete silný zlozvyk a budujete si seberegulační dovednosti potřebné pro trvalé uzdravení.</p>"
+          },
+          {
+            "id": "s12",
+            "title": "Přirozená obnova dopaminu",
+            "time": "8 min",
+            "type": "Článek",
+            "content": "<p>Užívání stimulantů zanechává dopaminový systém mozku ve stavu hlubokého vyčerpání, což vede k všudypřítomnému pocitu otupělosti a ztrátě radosti z běžných činností. Obnova hladiny dopaminu přirozenou cestou je pomalý, ale hluboce obohacující proces. Zahrnuje zapojení se do aktivit, které poskytují skutečný a udržitelný pocit odměny bez zničujícího náporu stimulantů. Fyzické cvičení je jedním z nejúčinnějších způsobů, jak zvýšit hladinu dopaminu a zlepšit náladu; i krátká denní procházka nebo lekce jógy může mít významný vliv. Kreativní projekty, ať už jde o vaření, malování nebo psaní, poskytují přirozený pocit úspěchu a plynutí. Trávení času v přírodě a pěstování autentických sociálních vazeb také zdravým a vyváženým způsobem stimulují centra odměny v mozku. Stanovení cílů – a malé, každodenní výhry, které s ním přicházejí – je dalším silným nástrojem pro obnovu dopaminu. Začněte s malými, dosažitelnými cíli a oslavujte svůj úspěch. Je důležité být trpělivý; váš přirozený systém odměn se neresetuje přes noc. Můžete se cítit „otupělí“ několik týdnů nebo i měsíců, ale to je dočasná fáze. Důsledným výběrem přirozených zdrojů odměny pomáháte svému mozku znovuobjevit schopnost radosti a budovat si život plný skutečného naplnění a síly.</p>"
+          },
+          {
+            "id": "s13",
+            "title": "Stimulanty a vztahy",
+            "time": "8 min",
+            "type": "Článek",
+            "content": "<p>Užívání stimulantů může mít zničující dopad na vztahy, které se často vyznačují ztrátou důvěry, zvýšenými konflikty a emočním odtažitostí. Intenzivní zaměření na získávání a užívání drogy v kombinaci s nestálostí cyklu vrcholu a pádu nechává jen málo prostoru pro potřeby druhých. Abyste tyto vztahy napravili, musíte se nejprve zavázat k vlastní stabilitě a zotavení. Skutečná náprava vyžaduje více než jen omluvu; vyžaduje důsledné, změněné chování v průběhu času. Měnou důvěry je spolehlivost. Tím, že se ukážete, když slíbíte, budete upřímní ohledně svých problémů a zůstanete přítomni během interakcí, pomalu obnovujete most k těm, na kterých vám záleží. Je také důležité vést upřímné rozhovory o škodě, kterou vaše užívání způsobilo, a dát druhé osobě prostor k vyjádření svých pocitů, aniž byste se stali obrannými. Některé vztahy se mohly stát příliš toxickými nebo se soustředit na užívání, než aby byly součástí vašeho nového života, a identifikace těchto faktorů je bolestivou, ale nezbytnou součástí zotavení. S těmi, které se rozhodnete ponechat, buďte trpěliví; důvěra se buduje po kapkách a ztrácí se v kbelících. Jak se budete uzdravovat, zjistíte, že vaše vztahy se prohlubují a jsou autentičtější, protože jsou založeny na tom, kým skutečně jste, ne na tom, jakým člověkem z vás udělaly stimulanty.</p>"
+          },
+          {
+            "id": "s14",
+            "title": "Kognitivní zotavení – co očekávat",
+            "time": "7 min",
+            "type": "Článek",
+            "content": "<p>Dlouhodobé užívání stimulantů může významně ovlivnit kognitivní funkce, jako je paměť, pozornost a rozhodování. Kognitivní zotavení je proces, při kterém váš mozek tyto funkce opravuje během procesu abstinence. V prvních týdnech a měsících můžete pociťovat „mozkovou mlhu“ – pocit duševní pomalosti, potíže s koncentrací a občasné výpadky paměti. Je důležité si uvědomit, že se jedná o normální součást procesu hojení. Váš mozek se v podstatě „znovu učí“, jak zpracovávat informace bez umělé stimulace drogou. Pro podporu kognitivního zotavení se věnujte aktivitám, které jemným a podpůrným způsobem procvičují vaši mysl – čtení, luštění hádanek nebo učení se jednoduché nové dovednosti. Dodržování pravidelného spánkového režimu a dostatečná hydratace také přímo podporují zdraví mozku. Bylo prokázáno, že fyzické cvičení zlepšuje kognitivní funkce a dokonce stimuluje růst nových nervových drah. Buďte k sobě trpěliví; nebudete se každý den cítit „mentálně bystří“. S pokračující abstinencí a zaměřením na celkové zdraví však většina lidí zjistí, že se jim během prvního roku zotavení výrazně vrací kognitivní jasnost. Nejenže „přestáváte brát drogu“; Aktivně obnovujete schopnost svého mozku jasně myslet, soustředěně se soustředit a moudře se rozhodovat.</p>"
+          },
+          {
+            "id": "s15",
+            "title": "Nalezení energie bez stimulantů",
+            "time": "7 min",
+            "type": "Článek",
+            "content": "<p>Jednou z nejčastějších výzev při regeneraci po stimulantech je nalezení energie a motivace k tomu, abyste zvládli den bez chemického povzbuzení. Zpočátku se můžete cítit hluboce unavení a „zmatení“, protože se vaše tělo a mozek zotavují z extrémního vyčerpání. Hledání přirozené energie začíná základy: pravidelným spánkem, vyváženou stravou a pravidelnou fyzickou aktivitou. Pravidelná ranní rutina, včetně zdravé snídaně a krátké procházky, může pomoci vašemu tělu signalizovat, že je čas se probudit. Je také užitečné podívat se na zdroje motivace ve vašem životě; nalezení úkolů a cílů, které vás skutečně zajímají, může poskytnout přirozený pocit motivace. Rozdělte si velké úkoly na malé, zvládnutelné kroky, abyste se vyhnuli pocitu zahlcení. A co je nejdůležitější, dovolte si v raných fázích regenerace postupovat pomalejším tempem. Nejste „selhaná“ verze svého energetického já užívajícího stimulanty; jste odolná lidská bytost, která si buduje udržitelný a autentický základ síly. Postupem času, jak se vaše neurochemie resetuje, objevíte úroveň energie, která je stabilní, spolehlivá a zcela vaše vlastní. Přecházíte ze stavu umělé intenzity do stavu přirozené vitality, kde můžete čelit životu s jasnou hlavou a stálým zdrojem skutečné síly.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}

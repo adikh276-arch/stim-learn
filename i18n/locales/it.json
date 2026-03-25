@@ -1,0 +1,137 @@
+{
+  "app_title": "Modulo di apprendimento",
+  "progress_label": "Progressi",
+  "back_label": "Indietro",
+  "minutes_label": "min",
+  "type_article": "Articolo",
+  "type_assessment": "Valutazione",
+  "type_activity": "Attività",
+  "substance_name": "Stimolanti",
+  "DATA": {
+    "sections": [
+      {
+        "num": "01",
+        "title": "Come funzionano gli stimolanti",
+        "articles": [
+          {
+            "id": "s1",
+            "title": "Il cervello sotto l&#39;effetto di cocaina e metanfetamina",
+            "time": "5 min",
+            "type": "Articolo",
+            "content": "<p>Gli stimolanti come la cocaina e la metanfetamina agiscono aumentando drasticamente i livelli di dopamina nei circuiti di ricompensa del cervello. Mentre la cocaina lo fa bloccando il riassorbimento della dopamina, la metanfetamina va oltre, bloccando sia il riassorbimento che stimolando un rilascio ancora più massiccio. Questo crea un&#39;intensa e immediata ondata di energia, sicurezza ed euforia. Tuttavia, questo picco artificiale è estremamente stressante per il cervello. Il cervello reagisce disattivando i propri recettori della dopamina per proteggersi dalla stimolazione eccessiva. Questa deplezione è il motivo per cui all&#39;&quot;euforia&quot; segue inevitabilmente un &quot;crollo&quot;: uno stato di profonda spossatezza, depressione e irritabilità. Nel tempo, l&#39;uso regolare può portare a cambiamenti a lungo termine nella struttura e nella funzione cerebrale, influenzando la memoria, il processo decisionale e la regolazione emotiva. Comprendere questo ciclo di picco e crollo è essenziale per il recupero. Ti aiuta a capire che gli intensi stati d&#39;animo negativi che provi non sono un riflesso della tua personalità, ma una conseguenza biologica dell&#39;impatto della droga sulla tua neurochimica. Smettendo di assumerla, il tuo cervello inizierà il lento processo di ripristino del suo naturale equilibrio di dopamina, permettendoti infine di ritrovare energia e gioia di vivere senza bisogno di stimolanti.</p>"
+          },
+          {
+            "id": "s2",
+            "title": "L&#39;abuso di Adderall, quando prescritto, diventa problematico.",
+            "time": "6 min",
+            "type": "Articolo",
+            "content": "<p>L&#39;Adderall e altri stimolanti su prescrizione sono molto efficaci nel trattamento dell&#39;ADHD, ma presentano un elevato potenziale di abuso e dipendenza. L&#39;abuso si verifica quando il farmaco viene assunto in dosi superiori a quelle prescritte, assunto senza ricetta medica o utilizzato per scopi diversi da quelli previsti, come ad esempio per studiare o perdere peso. Poiché questi farmaci sono &quot;prescritti&quot;, molte persone credono erroneamente che siano intrinsecamente sicuri. Tuttavia, ad alte dosi, possono avere effetti simili ad altri potenti stimolanti, tra cui aumento della frequenza cardiaca, ipertensione e un alto rischio di dipendenza. La dipendenza spesso si sviluppa in modo subdolo: potresti accorgerti di aver bisogno del farmaco per sentirti &quot;vigile&quot; o per gestire le attività quotidiane. Col tempo, potresti scoprire di non poter più farne a meno, sperimentando sintomi di astinenza significativi come affaticamento e depressione quando interrompi l&#39;assunzione. Riconoscere il passaggio dall&#39;uso terapeutico all&#39;abuso problematico è fondamentale. Se cerchi di ottenere nuove prescrizioni in anticipo, usi il farmaco per gestire lo stress o provi ansia per la tua scorta, questi sono segnali che indicano la formazione di una dipendenza. Riconoscere questa realtà è il primo passo per collaborare con un professionista sanitario al fine di gestire in modo sicuro la propria salute e costruire una vita libera dalla necessità di abusare di stimolanti.</p>"
+          },
+          {
+            "id": "s3",
+            "title": "Il ciclo di crisi spiegato",
+            "time": "5 min",
+            "type": "Articolo",
+            "content": "<p>Il ciclo di &quot;crollo&quot; è una caratteristica distintiva dell&#39;uso di stimolanti e rappresenta il periodo immediatamente successivo a un&#39;abbuffata o a un periodo di consumo elevato. Quando gli effetti della droga svaniscono, i livelli di dopamina nel cervello crollano, portando a uno stato di profondo esaurimento fisico ed emotivo. Questo crollo è caratterizzato da estrema stanchezza, aumento dell&#39;appetito e un profondo e pervasivo senso di depressione o &quot;appiattimento&quot;. Si possono anche sperimentare intensa irritabilità, ansia e un desiderio irrefrenabile di assumere altra sostanza per sfuggire al disagio. Questo ciclo è ciò che alimenta la dipendenza; il dolore del crollo spinge il consumatore a cercare un altro sballo, creando un circolo vizioso. Comprendere il crollo come un evento fisiologico è fondamentale per affrontare le prime fasi del recupero. È un segno che il cervello sta cercando di ricalibrarsi dopo essere stato spinto al limite. Durante questo periodo, è importante concentrarsi su riposo, idratazione e alimentazione. Riconoscere che le intense sensazioni di disperazione sono temporanee e di origine biologica può aiutare a resistere all&#39;impulso di assumere nuovamente la sostanza. Ogni volta che superi una fase critica senza ricorrere agli stimolanti, interrompi il ciclo e permetti al tuo cervello di compiere un altro passo verso il naturale equilibrio e una guarigione duratura.</p>"
+          },
+          {
+            "id": "s4",
+            "title": "Stimolanti e rischio cardiovascolare",
+            "time": "7 min",
+            "type": "Articolo",
+            "content": "<p>Uno dei pericoli più significativi e immediati dell&#39;uso di stimolanti è lo stress che questi esercitano sul sistema cardiovascolare. Gli stimolanti agiscono attivando la risposta di &quot;attacco o fuga&quot; dell&#39;organismo, causando un brusco aumento della frequenza cardiaca e della pressione sanguigna. Sebbene ciò crei una temporanea sensazione di energia, costringe anche il cuore a lavorare molto di più e provoca la costrizione dei vasi sanguigni. Questo può portare a una serie di gravi problemi di salute, tra cui palpitazioni, aritmie cardiache e un rischio significativamente maggiore di infarti e ictus, anche in individui giovani e altrimenti sani. L&#39;uso prolungato può causare danni permanenti al muscolo cardiaco e al rivestimento dei vasi sanguigni. È inoltre frequente che gli stimolanti vengano assunti in combinazione con altre sostanze come l&#39;alcol, il che complica ulteriormente e aumenta il rischio cardiovascolare. Se si avverte dolore al petto, mancanza di respiro o un battito cardiaco accelerato che non rallenta, è fondamentale consultare immediatamente un medico. Comprendere questi rischi è una forte motivazione per scegliere una vita senza stimolanti. Smettendo di fumare, si riduce immediatamente lo sforzo a carico del cuore e si permette al sistema cardiovascolare di iniziare il processo di guarigione e di protezione della salute a lungo termine.</p>"
+          },
+          {
+            "id": "s5",
+            "title": "Come si sviluppa la dipendenza",
+            "time": "7 min",
+            "type": "Valutazione",
+            "content": "<p>La dipendenza da stimolanti si sviluppa attraverso una combinazione di cambiamenti biologici nel cervello e il rafforzamento di schemi comportamentali. Tutto inizia con il rapido adattamento del cervello ai massicci picchi di dopamina causati dalla sostanza. Per mantenere l&#39;equilibrio, il cervello riduce la sua produzione naturale di dopamina e il numero di recettori disponibili. Ciò significa che, col tempo, è necessaria una dose maggiore di stimolanti solo per sentirsi &quot;normali&quot;, uno stato noto come tolleranza. Allo stesso tempo, il sistema di ricompensa del cervello diventa altamente sensibile a qualsiasi stimole associata alla sostanza – determinate persone, luoghi o persino momenti della giornata – creando un forte e automatico bisogno. La componente comportamentale della dipendenza consiste nell&#39;integrazione della sostanza nella propria vita come principale meccanismo di difesa per affrontare stress, stanchezza o situazioni sociali. Si inizia a credere di &quot;aver bisogno&quot; della sostanza per funzionare o per essere la persona che si desidera essere. Questa &quot;triplice minaccia&quot; di tolleranza fisica, desiderio irrefrenabile e dipendenza psicologica è ciò che rende la dipendenza da stimolanti così potente. Riconoscere queste fasi non è segno di fallimento, ma un modo per comprendere la sfida che stai affrontando. Con il giusto supporto e l&#39;impegno al cambiamento, puoi invertire questi schemi e costruire una vita di vera salute e indipendenza.</p>"
+          }
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Scendere in sicurezza",
+        "articles": [
+          {
+            "id": "s6",
+            "title": "Gestire l&#39;incidente in sicurezza",
+            "time": "6 min",
+            "type": "Attività",
+            "content": "<p>Gestire la fase di astinenza da stimolanti significa dare priorità alla sicurezza fisica e alla stabilità emotiva durante un periodo di estrema vulnerabilità. Il primo passo è assicurarsi di trovarsi in un ambiente sicuro e tranquillo dove potersi riposare. Il corpo e la mente sono profondamente debilitati e hanno bisogno di tempo per iniziare il processo di recupero. L&#39;idratazione è essenziale: bevete molta acqua e liquidi ricchi di elettroliti per aiutare il vostro organismo a riequilibrarsi. Anche l&#39;alimentazione è fondamentale, poiché l&#39;appetito spesso ritorna con forza durante la fase di astinenza; concentratevi su cibi sani e ricchi di proteine che forniscono energia a lungo termine. A livello emotivo, preparatevi a intense sensazioni di depressione, ansia e irritabilità. Ricordate a voi stessi costantemente che queste sensazioni sono una conseguenza biologica temporanea della fase di astinenza e che passeranno. Evitate di prendere decisioni importanti o di intraprendere conversazioni ad alto rischio di conflitto durante questo periodo. Contattare un amico fidato, un familiare o un professionista che comprenda il recupero dalla dipendenza da stimolanti può fornire un livello fondamentale di sicurezza e responsabilità. Se si verificano sintomi gravi come allucinazioni, pensieri paranoici o ideazione suicidaria, consultate immediatamente un medico. Gestire l&#39;incidente in modo sicuro è un atto di cura di sé e il primo passo per spezzare il ciclo della dipendenza.</p>"
+          },
+          {
+            "id": "s7",
+            "title": "Recupero del sonno dopo l&#39;uso di stimolanti",
+            "time": "6 min",
+            "type": "Attività",
+            "content": "<p>Il sonno è spesso la prima cosa a essere sacrificata nel ciclo di assunzione di stimolanti, e ricostruire un ritmo sonno-veglia sano è una delle fasi più importanti del recupero. Gli stimolanti interferiscono con il naturale ciclo sonno-veglia del cervello, causando periodi di insonnia seguiti da lunghi &quot;dormienti di emergenza&quot; che non sono ristoratori. Quando si smette di assumerli, l&#39;architettura del sonno inizia un lento processo di riparazione. Inizialmente si potrebbe sperimentare un periodo di eccessiva sonnolenza, mentre il corpo cerca di recuperare dalla stanchezza accumulata. A questo segue un periodo in cui addormentarsi e rimanere addormentati può essere difficile, poiché il sistema nervoso rimane in uno stato di allerta. Per favorire il recupero del sonno, è importante stabilire un orario di sveglia regolare e una routine serale rilassante. Evitare caffeina e schermi (telefoni, tablet e TV) almeno un&#39;ora prima di andare a letto. Assicurarsi che la camera da letto sia fresca, buia e utilizzata esclusivamente per dormire. Se ci si ritrova svegli e frustrati, alzarsi dal letto e dedicarsi a un&#39;attività tranquilla in penombra finché non si avverte un vero senso di sonnolenza. Sebbene possano essere necessarie diverse settimane prima che il sonno diventi davvero ristoratore, perseverare con queste sane abitudini permetterà al cervello di ritrovare il suo ritmo naturale, donandoti l&#39;energia e la lucidità necessarie per una guarigione duratura.</p>"
+          },
+          {
+            "id": "s8",
+            "title": "Supporto nutrizionale durante la convalescenza",
+            "time": "6 min",
+            "type": "Articolo",
+            "content": "<p>L&#39;uso di stimolanti spesso porta a trascurare l&#39;alimentazione, poiché la droga sopprime l&#39;appetito e l&#39;attenzione rimane concentrata sulla prossima dose. Ricostruire la propria salute attraverso una corretta alimentazione è fondamentale per la guarigione. Il cervello e il corpo sono stati impoveriti di nutrienti essenziali, in particolare quelli necessari per la produzione di neurotrasmettitori e per la salute cardiovascolare. Concentrati su una dieta ricca di proteine di alta qualità, come uova, pesce e carni magre, che forniscono gli amminoacidi necessari al cervello per ricostituire i livelli di dopamina. I grassi sani, presenti in avocado, frutta secca e olio d&#39;oliva, sono essenziali per la funzione cerebrale e la riparazione cellulare. I carboidrati complessi, come cereali integrali e verdure, forniscono energia costante e contribuiscono a stabilizzare l&#39;umore. È inoltre fondamentale rimanere ben idratati durante la giornata. Potresti notare che l&#39;appetito ritorna con forza nelle prime fasi della guarigione; invece di ricorrere a cibi trasformati e ricchi di zuccheri che causano cali di energia, punta a pasti e spuntini equilibrati. Il supporto nutrizionale non riguarda solo la salute fisica; è un modo per sostenere direttamente la stabilità emotiva e la lucidità mentale. Dando al tuo corpo il carburante di cui ha bisogno, crei una solida base per il duro lavoro di recupero e costruisci un futuro di autentica vitalità e forza.</p>"
+          },
+          {
+            "id": "s9",
+            "title": "Salute mentale nei giorni successivi all&#39;uso",
+            "time": "8 min",
+            "type": "Articolo",
+            "content": "<p>I giorni successivi all&#39;assunzione di stimolanti sono spesso caratterizzati da un significativo &quot;sforzo emotivo&quot;, poiché il cervello fatica a ritrovare il suo equilibrio. Potresti sperimentare una serie di problemi di salute mentale, tra cui depressione profonda, ansia intensa, irritabilità e una pervasiva mancanza di motivazione o piacere, una condizione nota come anedonia. È importante capire che queste sensazioni sono una diretta conseguenza biologica dell&#39;enorme deplezione di dopamina causata dalla sostanza. Non sono un segno che sei naturalmente una persona depressa o ansiosa, né che il tuo percorso di recupero stia fallendo. Si tratta di stati temporanei che miglioreranno gradualmente con il ripristino della neurochimica. Per gestire questo periodo, sii estremamente paziente e compassionevole con te stesso. Evita l&#39;autocritica e l&#39;isolamento. Dedicarti ad attività semplici e gestibili che richiedono concentrazione può aiutare a calmare la mente ansiosa. Rivolgerti a un consulente o a un gruppo di supporto offre uno spazio sicuro in cui condividere queste sensazioni con altre persone che ti capiscono. Se la depressione ti sembra insormontabile o se hai pensieri di autolesionismo, cerca immediatamente aiuto professionale. Ricorda che la sensazione di apatia e disperazione che provi oggi non è la tua realtà permanente. Con il tempo e la continua astinenza, la tua capacità di provare gioia, motivazione e stabilità emotiva tornerà.</p>"
+          },
+          {
+            "id": "s10",
+            "title": "Principi fondamentali della riduzione del danno",
+            "time": "7 min",
+            "type": "Articolo",
+            "content": "<p>Sebbene l&#39;obiettivo finale del recupero sia la totale astinenza dagli stimolanti, comprendere la riduzione del danno è fondamentale per rimanere al sicuro mentre si lavora per raggiungere tale obiettivo. La riduzione del danno consiste nel minimizzare le conseguenze negative dell&#39;uso di droghe per coloro che non sono ancora in grado o non vogliono smettere. Le strategie di base includono non assumere mai droghe da soli – avere qualcuno presente che possa chiamare aiuto in caso di necessità – e avere sempre un piano per gestire una crisi. Mantenersi idratati e cercare di mangiare anche piccole quantità può ridurre lo stress fisico sul corpo. È anche importante essere consapevoli dell&#39;ambiente in cui si assume la sostanza ed evitare situazioni ad alto rischio in cui è più probabile assumere più del previsto. Comprendere i rischi derivanti dalla combinazione di stimolanti con altre sostanze, in particolare alcol o altre droghe, è essenziale per prevenire overdose ed eventi cardiovascolari. Avere a portata di mano i recapiti dei servizi locali di riduzione del danno e del pronto soccorso è un passo semplice ma salvavita. La riduzione del danno non significa giustificare l&#39;uso di droghe; significa dare valore alla vita umana e fornire la sicurezza e il supporto necessari affinché una persona possa, in futuro, scegliere un percorso più sano. La tua sicurezza è importante, e adottare anche piccoli accorgimenti per ridurre i rischi è un importante atto di cura di sé nel percorso verso la guarigione.</p>"
+          }
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Recupero a lungo termine",
+        "articles": [
+          {
+            "id": "s11",
+            "title": "Interrompere il modello di abbuffata",
+            "time": "7 min",
+            "type": "Attività",
+            "content": "<p>Molte persone che fanno uso di stimolanti si ritrovano intrappolate in un ciclo di &quot;abbuffate e crolli&quot;: assumono la sostanza in modo massiccio per diversi giorni, per poi avere un crollo altrettanto lungo. Interrompere questo schema è spesso il primo passo più difficile nel percorso di recupero. Richiede un cambiamento fondamentale nel modo in cui si percepisce la sostanza e l&#39;impegno a interrompere il ciclo il prima possibile. Iniziate identificando i primi segnali premonitori di un&#39;abbuffata in programma: certi pensieri, sentimenti o segnali sociali che portano sempre all&#39;assunzione. Una volta riconosciuti questi fattori scatenanti, potete elaborare un piano &quot;di emergenza&quot;. Questo potrebbe significare allontanarsi da un luogo ad alto rischio, chiamare immediatamente una persona di supporto o dedicarsi a un&#39;attività pianificata in anticipo e completamente estranea all&#39;uso di droghe. L&#39;obiettivo è creare una pausa tra l&#39;impulso e l&#39;azione. È anche utile affrontare le ragioni profonde dell&#39;abbuffata, che si tratti di una fuga dallo stress, di un modo per gestire la solitudine o della ricerca di una gratificazione intensa. Sostituire le abbuffate con una serie di piccole e costanti abitudini sane può aiutare a stabilizzare la neurochimica e a ridurre l&#39;effetto &quot;picco e crollo&quot;. Ogni volta che scegli di non abbuffarti, indebolisci un&#39;abitudine radicata e sviluppi le capacità di autoregolazione necessarie per una guarigione duratura.</p>"
+          },
+          {
+            "id": "s12",
+            "title": "Ricostruire la dopamina in modo naturale",
+            "time": "8 min",
+            "type": "Articolo",
+            "content": "<p>L&#39;uso di stimolanti lascia il sistema dopaminergico del cervello in uno stato di profondo esaurimento, causando una sensazione pervasiva di apatia e una perdita di piacere nelle attività quotidiane. Ricostruire i livelli di dopamina in modo naturale è un processo lento ma profondamente gratificante. Implica impegnarsi in attività che offrano un autentico e duraturo senso di ricompensa, senza il devastante crollo tipico degli stimolanti. L&#39;esercizio fisico è uno dei modi più efficaci per aumentare la dopamina e migliorare l&#39;umore; anche una breve passeggiata quotidiana o una sessione di yoga possono fare una differenza significativa. I progetti creativi, che si tratti di cucinare, dipingere o scrivere, offrono un naturale senso di realizzazione e di flusso. Anche trascorrere del tempo nella natura e coltivare autentiche relazioni sociali stimolano i centri di ricompensa del cervello in modo sano ed equilibrato. Stabilire degli obiettivi – e le piccole vittorie quotidiane che ne derivano – è un altro potente strumento per ricostituire la dopamina. Iniziate con piccoli obiettivi raggiungibili e celebrate i vostri successi. È importante essere pazienti: il vostro sistema di ricompensa naturale non si ripristinerà da un giorno all&#39;altro. Potresti sentirti &quot;spento&quot; per diverse settimane o addirittura mesi, ma si tratta di una fase temporanea. Scegliendo costantemente fonti naturali di gratificazione, aiuti il tuo cervello a riscoprire la sua capacità di gioia e a costruire una vita di autentica realizzazione e forza.</p>"
+          },
+          {
+            "id": "s13",
+            "title": "Stimolanti e relazioni",
+            "time": "8 min",
+            "type": "Articolo",
+            "content": "<p>L&#39;uso di stimolanti può avere un impatto devastante sulle relazioni, spesso caratterizzato da una perdita di fiducia, un aumento dei conflitti e un distacco emotivo. L&#39;intensa concentrazione sull&#39;ottenimento e sull&#39;uso della droga, unita alla volatilità del ciclo di picco e crollo, lascia poco spazio ai bisogni degli altri. Per riparare queste relazioni, devi prima impegnarti per la tua stabilità e il tuo recupero. Una vera riparazione richiede più di semplici scuse; richiede un cambiamento di comportamento costante nel tempo. La moneta della fiducia è l&#39;affidabilità. Presentandoti quando dici che lo farai, essendo onesto riguardo alle tue difficoltà e rimanendo presente durante le interazioni, ricostruirai lentamente il ponte con le persone a cui tieni. È anche importante avere conversazioni sincere sul danno causato dal tuo uso di sostanze, dando all&#39;altra persona lo spazio per esprimere i propri sentimenti senza mettersi sulla difensiva. Alcune relazioni potrebbero essere diventate troppo tossiche o incentrate sull&#39;uso di sostanze per far parte della tua nuova vita, e identificarle è una parte dolorosa ma necessaria del recupero. Per quelle che scegli di mantenere, sii paziente; la fiducia si costruisce goccia a goccia e si perde a secchiate. Durante il processo di guarigione, scoprirai che i tuoi legami diventeranno più profondi e autentici, perché basati su chi sei veramente, non sulla persona che gli stimolanti ti hanno trasformato.</p>"
+          },
+          {
+            "id": "s14",
+            "title": "Recupero cognitivo: cosa aspettarsi",
+            "time": "7 min",
+            "type": "Articolo",
+            "content": "<p>L&#39;uso prolungato di stimolanti può avere un impatto significativo sulle funzioni cognitive come la memoria, l&#39;attenzione e la capacità decisionale. Il recupero cognitivo è il processo attraverso il quale il cervello ripara queste funzioni durante il percorso di astinenza. Nelle prime settimane e nei primi mesi, si può sperimentare una sorta di &quot;nebbia mentale&quot;, ovvero una sensazione di lentezza mentale, difficoltà di concentrazione e occasionali vuoti di memoria. È importante capire che si tratta di una parte normale del processo di guarigione. Il cervello sta essenzialmente &quot;reimparando&quot; a elaborare le informazioni senza la stimolazione artificiale della sostanza. Per favorire il recupero cognitivo, è consigliabile dedicarsi ad attività che stimolino la mente in modo delicato e costruttivo, come leggere, fare puzzle o imparare una nuova semplice abilità. Mantenere un ritmo sonno-veglia regolare e una corretta idratazione contribuisce direttamente alla salute del cervello. È stato dimostrato che l&#39;esercizio fisico migliora le funzioni cognitive e stimola persino la crescita di nuove connessioni neurali. Siate pazienti con voi stessi: non vi sentirete &quot;mentalmente brillanti&quot; tutti i giorni. Tuttavia, con la continua astinenza e un&#39;attenzione particolare alla salute generale, la maggior parte delle persone riscontra un significativo miglioramento della lucidità mentale nel corso del primo anno di recupero. Non si tratta semplicemente di &quot;smettere di assumere una droga&quot;; si tratta di ripristinare attivamente la capacità del cervello di pensare con lucidità, di concentrarsi e di prendere decisioni sagge.</p>"
+          },
+          {
+            "id": "s15",
+            "title": "Trovare energia senza stimolanti",
+            "time": "7 min",
+            "type": "Articolo",
+            "content": "<p>Una delle sfide più comuni nel percorso di recupero dalla dipendenza da stimolanti è trovare l&#39;energia e la motivazione per affrontare la giornata senza una dose di sostanze chimiche. All&#39;inizio, potresti sentirti profondamente stanco e &quot;spento&quot;, mentre il tuo corpo e la tua mente si riprendono dall&#39;estremo stress causato dall&#39;uso. Ritrovare l&#39;energia in modo naturale inizia dalle basi: un sonno regolare, un&#39;alimentazione equilibrata e un&#39;attività fisica costante. Una routine mattutina regolare, che includa una colazione sana e una breve passeggiata, può aiutare a segnalare al tuo corpo che è ora di svegliarsi. È anche utile individuare le fonti di motivazione nella tua vita; trovare compiti e obiettivi che ti interessano davvero può darti una spinta naturale. Suddividi i compiti più impegnativi in piccoli passi gestibili per evitare di sentirti sopraffatto. Soprattutto, concediti il permesso di procedere a un ritmo più lento nelle prime fasi del recupero. Non sei una versione &quot;fallimentare&quot; di te stesso quando eri iperattivo e facevi uso di stimolanti; sei un essere umano resiliente che sta costruendo una solida e autentica base di forza. Col tempo, man mano che la tua neurochimica si riequilibra, scoprirai un livello di energia stabile, affidabile e interamente tuo. Passerai da uno stato di intensità artificiale a uno stato di vitalità naturale, in cui potrai affrontare la vita con lucidità e una fonte costante di autentica energia.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}
