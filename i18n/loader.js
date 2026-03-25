@@ -22,16 +22,8 @@
     async function fetchTranslations(lang) {
         if (lang === 'en') return null;
         try {
-            // Get the base path of the current module
-            const loc = window.location;
-            let base = "./";
-            if (!loc.pathname.endsWith('/') && loc.pathname.indexOf('.') === -1) {
-                const parts = loc.pathname.split('/');
-                base = parts[parts.length - 1] + "/";
-            }
-
-            const response = await fetch(`${base}i18n/locales/${lang}.json`);
-            if (!response.ok) throw new Error("File not found at " + `${base}i18n/locales/${lang}.json`);
+            const response = await fetch(`./i18n/locales/${lang}.json`);
+            if (!response.ok) throw new Error("File not found");
             return await response.json();
         } catch (e) {
             console.warn("Translation load failed, using English fallback", e);

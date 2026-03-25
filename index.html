@@ -9,14 +9,12 @@
     <script>
         (function() {
             var loc = window.location;
-            var path = loc.pathname;
-            var base = "./";
-            if (!path.endsWith('/') && path.indexOf('.') === -1) {
-                var parts = path.split('/');
-                base = parts[parts.length - 1] + "/";
+            if (!loc.pathname.endsWith('/') && !loc.pathname.includes('.')) {
+                loc.replace(loc.pathname + '/' + loc.search + loc.hash);
+                return;
             }
             var s = document.createElement('script');
-            s.src = base + "i18n/loader.js";
+            s.src = "./i18n/loader.js";
             s.defer = true;
             document.head.appendChild(s);
         })();
@@ -232,7 +230,7 @@
         .fb-btn.no { background: var(--red-l); border-color: var(--red-b); color: var(--red); }
         .fb-thanks { font-size: 12.5px; color: var(--ink-4); margin-top: 10px; display: none; }
 
-        #toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-90px); background: white; border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 12px; padding: 12px 18px; font-size: 14px; font-weight: 600; color: var(--green); box-shadow: 0 8px 32px rgba(0,0,0,.1); display: flex; align-items: center; gap: 9px; z-index: 999; transition: transform .32s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; opacity: 0; }
+        #toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-90px); background: white; border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 12px; padding: 12px 18px; font-size: 14px; font-weight: 600; color: var(--green); box-shadow: 0 8px 32px rgba(0,0,0,.1); display: flex; align-items: center; gap: 999; z-index: 999; transition: transform .32s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; opacity: 0; }
         #toast.in { transform: translateX(-50%) translateY(0); opacity: 1; }
 
         @media(max-width:480px){ .crs-card { margin: 14px 12px 20px; } .phases { padding: 0 12px; } .art-pg { padding: 22px 16px 60px; } }
@@ -447,19 +445,119 @@
         }
     ]
 };
-        (function() {
-            var loc = window.location;
-            var path = loc.pathname;
-            var base = "./";
-            if (!path.endsWith('/') && path.indexOf('.') === -1) {
-                var parts = path.split('/');
-                base = parts[parts.length - 1] + "/";
+
+
+
+        let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
+
+        function init() {
+            const list = document.getElementById('phases');
+            list.innerHTML = '';
+            let total = 0, done = 0;
+
+            DATA.sections.forEach(sec => {
+                const phase = document.createElement('div');
+                phase.className = 'phase-blk';
+                phase.innerHTML = `
+                    <div class="phase-hd">
+                        <div class="phase-num">${sec.num}</div>
+                        <div class="phase-lbl">${sec.phase}</div>
+                    </div>
+                    <hr class="phase-rule">
+                    <div class="lessons-col"></div>
+                `;
+                const col = phase.querySelector('.lessons-col');
+                sec.lessons.forEach(ls => {
+                    total++;
+                    const isDone = read_stimulant.includes(ls.id);
+                    if(isDone) done++;
+                    
+                    const item = document.createElement('div');
+                    item.className = 'lc' + (isDone ? ' done' : '');
+                    item.innerHTML = `
+                        <div class="lc-ico">
+                            ${isDone ? '<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="3" stroke="#94A3B8" stroke-width="1.2"/></svg>'}
+                        </div>
+                        <div class="lc-body">
+                            <div class="lc-title">${ls.title}</div>
+                            <div class="lc-meta"><span>${ls.type}</span><div class="meta-dot"></div><span>${ls.mins} mins</span></div>
+                        </div>
+                    `;
+                    item.onclick = () => openArt(ls);
+                    col.appendChild(item);
+                });
+                list.appendChild(phase);
+            });
+
+            const pct = total ? Math.round((done / total) * 100) : 0;
+            document.getElementById('crs-fill').style.width = pct + '%';
+            document.getElementById('crs-pct').innerText = `Completed ${pct}%`;
+            document.getElementById('crs-cnt').innerText = `${done}/${total}`;
+
+            const next = DATA.sections.flatMap(s => s.lessons).find(l => !read_stimulant.includes(l.id));
+            const contBtn = document.getElementById('crs-cont');
+            if (next && done > 0) {
+                contBtn.classList.add('vis');
+                window.nextLesson = next;
+            } else {
+                contBtn.classList.remove('vis');
             }
-            var s = document.createElement('script');
-            s.src = base + "i18n/loader.js";
-            s.defer = true;
-            document.head.appendChild(s);
-        })();
+        }
+
+        function continueCourse() { if(window.nextLesson) openArt(window.nextLesson); }
+
+        function openArt(ls) {
+            const v = document.getElementById('view-art');
+            v.scrollTo(0,0);
+            v.classList.add('open');
+            document.getElementById('art-eye').innerText = ls.type;
+            document.getElementById('art-h1').innerText = ls.title;
+            document.getElementById('art-time').innerText = ls.mins + ' mins';
+            document.getElementById('art-body').innerHTML = ls.content || '<div class="quiz-card"><div class="quiz-ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h2>Ready to check your progress?</h2><p>This assessment helps you understand your relationship with ' + DATA.substance + ' and identifies key areas for focus.</p><button class="quiz-card-btn" onclick="markDone()">Start Assessment</button></div>';
+            
+            const btn = document.getElementById('done-btn');
+            const isDone = read_stimulant.includes(ls.id);
+            btn.className = 'done-btn' + (isDone ? ' completed' : '');
+            btn.innerHTML = isDone ? '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Lesson Completed' : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Mark as Complete';
+            
+            window.currId = ls.id;
+        }
+
+        function closeArt() { document.getElementById('view-art').classList.remove('open'); }
+
+        function markDone() {
+            if (!read_stimulant.includes(window.currId)) {
+                read_stimulant.push(window.currId);
+                localStorage.setItem('read_stimulant', JSON.stringify(read_stimulant));
+                showToast();
+                init();
+            }
+            closeArt();
+        }
+
+        function showToast() {
+            const t = document.getElementById('toast');
+            t.classList.add('in');
+            setTimeout(() => t.classList.remove('in'), 3000);
+        }
+
+        function giveFb(y) {
+            document.getElementById('fb-thanks').style.display = 'block';
+            setTimeout(() => document.getElementById('fb-thanks').style.display = 'none', 3000);
+        }
+
+        // i18n Integration
+        window.onTranslationsLoaded = (t) => {
+            if (t.DATA) {
+                DATA = t.DATA;
+            }
+            if (t.course_title) document.getElementById('crs-title').innerText = t.course_title;
+            if (t.progress_label) document.getElementById('crs-pct').innerText = t.progress_label;
+            init();
+        };
+
+        if (!window.i18nData) init();
+    
     
     </script>
 </body>
