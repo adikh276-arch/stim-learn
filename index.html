@@ -14,7 +14,7 @@
                 return;
             }
             var s = document.createElement('script');
-            s.src = "./i18n/loader.js";
+            s.src = "./i18n/loader.js?v=4";
             s.defer = true;
             document.head.appendChild(s);
         })();
@@ -230,7 +230,7 @@
         .fb-btn.no { background: var(--red-l); border-color: var(--red-b); color: var(--red); }
         .fb-thanks { font-size: 12.5px; color: var(--ink-4); margin-top: 10px; display: none; }
 
-        #toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-90px); background: white; border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 12px; padding: 12px 18px; font-size: 14px; font-weight: 600; color: var(--green); box-shadow: 0 8px 32px rgba(0,0,0,.1); display: flex; align-items: center; gap: 999; z-index: 999; transition: transform .32s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; opacity: 0; }
+        #toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-90px); background: white; border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 12px; padding: 12px 18px; font-size: 14px; font-weight: 600; color: var(--green); box-shadow: 0 8px 32px rgba(0,0,0,.1); display: flex; align-items: center; gap: 8px; z-index: 999; transition: transform .32s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; opacity: 0; }
         #toast.in { transform: translateX(-50%) translateY(0); opacity: 1; }
 
         @media(max-width:480px){ .crs-card { margin: 14px 12px 20px; } .phases { padding: 0 12px; } .art-pg { padding: 22px 16px 60px; } }
@@ -448,6 +448,8 @@
 
 
 
+
+
         let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
 
         function init() {
@@ -507,6 +509,7 @@
         function continueCourse() { if(window.nextLesson) openArt(window.nextLesson); }
 
         function openArt(ls) {
+            document.body.style.overflow = 'hidden';
             const v = document.getElementById('view-art');
             v.scrollTo(0,0);
             v.classList.add('open');
@@ -523,7 +526,10 @@
             window.currId = ls.id;
         }
 
-        function closeArt() { document.getElementById('view-art').classList.remove('open'); }
+        function closeArt() { 
+            document.body.style.overflow = '';
+            document.getElementById('view-art').classList.remove('open'); 
+        }
 
         function markDone() {
             if (!read_stimulant.includes(window.currId)) {
@@ -557,6 +563,8 @@
         };
 
         if (!window.i18nData) init();
+    
+    
     
     
     </script>

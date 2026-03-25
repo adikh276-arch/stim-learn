@@ -22,7 +22,7 @@
     async function fetchTranslations(lang) {
         if (lang === 'en') return null;
         try {
-            const response = await fetch(`./i18n/locales/${lang}.json`);
+            const response = await fetch(`./i18n/locales/${lang}.json?v=4`);
             if (!response.ok) throw new Error("File not found");
             return await response.json();
         } catch (e) {
