@@ -21,12 +21,31 @@
 
     async function fetchTranslations(lang) {
         if (lang === 'en') return null;
+        // Determine base path relative to this script
+        const scripts = document.getElementsByTagName('script');
+        let basePath = './i18n/';
+        for (let s of scripts) {
+            if (s.src && s.src.includes('loader.js')) {
+                basePath = s.src.split('loader.js')[0];
+                break;
+            }
+        }
+        const url = `${basePath}locales/${lang}.json?v=10`;
+        console.log(`[i18n] Resolved URL: ${url}`);
+        
         try {
-            const response = await fetch(`./i18n/locales/${lang}.json?v=4`);
-            if (!response.ok) throw new Error("File not found");
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            
+            const contentType = response.headers.get("content-type");
+            if (contentType && !contentType.includes("application/json") && !contentType.includes("text/plain")) {
+                const text = await response.text();
+                throw new Error(`Invalid content-type: ${contentType}. Body: ${text.substring(0, 100)}`);
+            }
+            
             return await response.json();
         } catch (e) {
-            console.warn("Translation load failed, using English fallback", e);
+            console.error("[i18n] Failed to load translations:", e.message);
             return null;
         }
     }
