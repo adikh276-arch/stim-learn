@@ -3,73 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Stimulants Learn Module</title>
+    <title>Alcohol Learn Module</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="/i18n/loader.js" defer></script>
     <style>
         :root {
-            --accent: #C44B2A;
-            --text-dark: #1A1A1A;
-            --text-meta: #717171;
-            --border: #EEEEEE;
+            --accent: #5B4FE8;
+            --text-dark: #0F172A;
+            --text-meta: #64748B;
+            --border: #E2E8F0;
             --bg: #FFFFFF;
+            --bg-muted: #F8FAFC;
+            --green: #10B981;
         }
 
-        html, body {
-            overflow: hidden;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background: var(--bg);
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
             font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
             color: var(--text-dark);
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            line-height: 1.5;
         }
 
         #app {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .view {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            max-width: 680px;
+            max-width: 580px;
             margin: 0 auto;
-            padding: 0 16px;
-            display: flex;
-            flex-direction: column;
+            position: relative;
+            min-height: 100vh;
         }
 
+        /* --- List View --- */
         #list-view {
-            z-index: 10;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
+            padding: 24px 20px 80px;
+            display: block;
         }
-
-        #reader-view {
-            z-index: 20;
-            transform: translateX(100%);
-            padding-top: 20px;
-        }
-
-        #reader-view.active {
-            transform: translateX(0);
-        }
-
-        #list-view.inactive {
-            transform: translateX(-20%);
-        }
+        
+        #list-view.hidden { display: none; }
 
         .top-module {
-            padding: 24px 0 16px;
-            flex-shrink: 0;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .lang-wrapper {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .lang-picker {
+            appearance: none;
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            color: var(--text-meta);
         }
 
         .substance-pill {
@@ -79,15 +74,34 @@
             padding: 8px 18px;
             border-radius: 100px;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(91, 79, 232, 0.2);
+        }
+
+        .hub-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 32px;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .progress-container {
             width: 100%;
-            height: 4px;
-            background: #F0F0F0;
-            border-radius: 2px;
+            height: 6px;
+            background: #F1F5F9;
+            border-radius: 10px;
             overflow: hidden;
         }
 
@@ -95,184 +109,282 @@
             height: 100%;
             background: var(--accent);
             width: 0%;
-            transition: width 0.4s ease;
+            transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         .section-header {
-            margin: 32px 0 12px;
+            margin: 40px 0 16px;
             display: flex;
             align-items: center;
+            border-bottom: 1.5px solid var(--border);
+            padding-bottom: 12px;
         }
 
         .section-num {
             color: var(--accent);
-            font-weight: 700;
-            font-size: 14px;
-            margin-right: 8px;
+            font-weight: 800;
+            font-size: 18px;
+            margin-right: 12px;
         }
 
         .section-title {
-            font-weight: 700;
-            font-size: 16px;
+            font-family: 'DM Serif Display', serif;
+            font-size: 20px;
             color: var(--text-dark);
         }
 
-        .article-row {
+        .article-card {
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            transition: background 0.2s;
-            min-height: 48px;
+            gap: 14px;
         }
 
-        .article-row:hover {
-            opacity: 0.8;
-            background: #FAFAFA;
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            background: white;
         }
 
-        .doc-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 12px;
-            color: #999;
+        .article-card.done {
+            border-left: 4px solid var(--green);
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
+            color: var(--text-meta);
+        }
+        .article-card.done .card-icon { color: var(--green); background: #ECFDF5; }
+
+        .card-body { flex: 1; }
+        .card-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; display: block; }
+        .card-meta { font-size: 11px; color: var(--text-meta); font-weight: 500; display: flex; align-items: center; gap: 8px; }
+        .meta-type { background: #E2E8F0; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; font-weight: 700; font-size: 9px; }
+
+        /* --- Reader View --- */
+        #reader-view {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: var(--bg);
+            z-index: 100;
+            min-height: 100vh;
+        }
+        
+        #reader-view.active { display: block; animation: slideIn 0.3s ease-out; }
+
+        @keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+        .reader-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-bottom: 1px solid var(--border);
+            z-index: 110;
         }
 
-        .article-info {
+        .back-btn {
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .back-btn:hover { background: #E2E8F0; }
+
+        .read-progress-outer {
             flex: 1;
+            height: 4px;
+            background: #F1F5F9;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .read-progress-fill {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+            transition: width 0.1s linear;
         }
 
-        .article-title {
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 2px;
+        .reader-content-wrap {
+            padding: 40px 20px 100px;
+        }
+
+        .reader-eyebrow {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
             display: block;
         }
 
-        .article-meta {
-            font-size: 11px;
-            color: var(--text-meta);
+        .reader-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .reader-meta-row {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 32px;
             display: flex;
-            align-items: center;
-            gap: 6px;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-meta);
         }
 
-        .type-badge {
-            background: #F0F0F0;
-            padding: 1px 6px;
-            border-radius: 3px;
-            text-transform: capitalize;
-            font-weight: 600;
-        }
-
-        .chevron {
-            color: #CCC;
+        .rt-body p {
             font-size: 18px;
-            margin-left: 8px;
-            font-weight: 300;
+            line-height: 1.8;
+            color: #1E293B;
+            margin-bottom: 24px;
         }
 
-        .reader-nav {
-            margin-bottom: 8px;
-            flex-shrink: 0;
+        /* --- Footer Section --- */
+        .reader-footer {
+            margin-top: 60px;
+            padding: 32px 0;
+            border-top: 2px solid var(--bg-muted);
+            text-align: center;
         }
 
-        .back-arrow {
+        .completion-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 700;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 48px;
-            margin-left: -14px;
+            gap: 10px;
+            width: 100%;
+            transition: all 0.2s;
+            box-shadow: 0 8px 24px rgba(91, 79, 232, 0.2);
         }
+        .completion-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(91, 79, 232, 0.3); }
+        .completion-btn.done { background: var(--green); box-shadow: none; pointer-events: none; }
 
-        .reader-header {
-            margin-bottom: 24px;
-            flex-shrink: 0;
+        .feedback-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
         }
-
-        .reader-title {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 8px;
-        }
-
-        .reader-content {
+        .fb-btn {
             flex: 1;
-            overflow-y: auto;
-            height: calc(100vh - 120px);
-            padding-bottom: 80px;
-            scrollbar-width: none;
-        }
-
-        .reader-content p {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #2D2D2D;
-            margin-bottom: 20px;
-        }
-
-        ::-webkit-scrollbar {
-            width: 0px;
-            background: transparent;
-        }
-    
-        .lang-wrapper {
-            position: absolute;
-            top: 24px;
-            right: 0px;
-            z-index: 100;
-        }
-        .lang-picker {
-            appearance: none;
-            background: #F0F0F0;
-            border: none;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
+            padding: 12px;
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
-            color: #666;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            background: white;
+            transition: all 0.2s;
+            color: var(--text-meta);
         }
-        .lang-picker:hover { background: #E5E5E5; }
-    
+        .fb-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--bg-muted); }
+
+        /* --- Toast --- */
+        #toast {
+            position: fixed;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--text-dark);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+        }
+        #toast.visible { transform: translateX(-50%) translateY(0); }
+        
+        @media (max-width: 480px) {
+            .reader-title { font-size: 30px; }
+            .rt-body p { font-size: 16px; }
+        }
     </style>
-    <script src="/i18n/loader.js" defer></script>
 </head>
 <body>
+    <div id="toast">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        <span id="toast-txt">Article completed!</span>
+    </div>
+
     <div id="app">
-        <div id="list-view" class="view">
+        <div id="list-view">
             <div class="top-module">
-            <div class="lang-wrapper">
-                <select id="language-selector" class="lang-picker">
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                    <option value="fr">FR</option>
-                    <option value="de">DE</option>
-                    <option value="hi">HI</option>
-                    <option value="ja">JA</option>
-                    <option value="zh-CN">ZH</option>
-                    <option value="ko">KO</option>
-                    <option value="ru">RU</option>
-                    <option value="it">IT</option>
-                    <option value="pt">PT</option>
-                    <option value="ar">AR</option>
-                    <option value="tr">TR</option>
-                    <option value="nl">NL</option>
-                    <option value="pl">PL</option>
-                    <option value="vi">VI</option>
-                    <option value="th">TH</option>
-                    <option value="id">ID</option>
-                    <option value="sv">SV</option>
-                    <option value="cs">CS</option>
-                </select>
-            </div>
+                <div class="lang-wrapper">
+                    <select id="language-selector" class="lang-picker">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="fr">FR</option>
+                        <option value="de">DE</option>
+                        <option value="hi">HI</option>
+                        <option value="ja">JA</option>
+                        <option value="zh-CN">ZH</option>
+                        <option value="ko">KO</option>
+                        <option value="ru">RU</option>
+                        <option value="it">IT</option>
+                        <option value="pt">PT</option>
+                        <option value="ar">AR</option>
+                        <option value="tr">TR</option>
+                        <option value="nl">NL</option>
+                        <option value="pl">PL</option>
+                        <option value="vi">VI</option>
+                        <option value="th">TH</option>
+                        <option value="id">ID</option>
+                        <option value="sv">SV</option>
+                        <option value="cs">CS</option>
+                    </select>
+                </div>
                 <div class="substance-pill" data-i18n="substance_name">Stimulants</div>
+                <h1 class="hub-title" data-i18n="app_title">Learn Hub</h1>
+                
+                <div class="progress-header">
+                    <span data-i18n="progress_label">Your Journey</span>
+                    <span id="prog-pct">0%</span>
+                </div>
                 <div class="progress-container">
                     <div id="main-progress" class="progress-bar"></div>
                 </div>
@@ -280,20 +392,39 @@
             <div id="content-list"></div>
         </div>
 
-        <div id="reader-view" class="view">
+        <div id="reader-view">
             <div class="reader-nav">
-                <div class="back-arrow" onclick="closeReader()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <div class="back-btn" onclick="closeReader()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </div>
+                <div class="read-progress-outer">
+                    <div id="read-progress-fill" class="read-progress-fill"></div>
                 </div>
             </div>
-            <div class="reader-header">
+            
+            <div class="reader-content-wrap">
+                <span class="reader-eyebrow" id="rt-eyebrow">ARTICLE</span>
                 <h1 class="reader-title" id="rt-title"></h1>
-                <div class="article-meta">
+                
+                <div class="reader-meta-row">
                     <span id="rt-time"></span>
-                    <span class="type-badge" id="rt-type"></span>
+                    <span id="rt-type" class="meta-type"></span>
+                </div>
+
+                <div class="rt-body" id="rt-content"></div>
+
+                <div class="reader-footer">
+                    <button id="complete-btn" class="completion-btn" onclick="markComplete()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span>Mark as Finished</span>
+                    </button>
+                    
+                    <div class="feedback-row">
+                        <button class="fb-btn">Helpful</button>
+                        <button class="fb-btn">Not for me</button>
+                    </div>
                 </div>
             </div>
-            <div class="reader-content" id="rt-content"></div>
         </div>
     </div>
 
@@ -336,39 +467,43 @@
             ]
         };
 
+
+
+
+
         let readArticles = new Set(JSON.parse(localStorage.getItem('read_stimulants') || '[]'));
+        let currentArticleId = null;
 
         function init() {
             renderList();
             updateProgress();
+            window.addEventListener('scroll', handleGlobalScroll);
         }
 
         function renderList() {
             const listEl = document.getElementById('content-list');
             let html = '';
-
             DATA.sections.forEach(sec => {
                 html += `
                     <div class="section-header">
-                        <span class="section-num">${sec.num}.</span>
+                        <span class="section-num">${sec.num}</span>
                         <span class="section-title">${sec.title}</span>
                     </div>
                 `;
                 sec.articles.forEach(art => {
-                    const isRead = readArticles.has(art.id);
+                    const done = readArticles.has(art.id);
                     html += `
-                        <div class="article-row" onclick="openReader('${art.id}')">
-                            <div class="doc-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <div class="article-card ${done ? 'done' : ''}" onclick="openReader('${art.id}')">
+                            <div class="card-icon">
+                                ${done ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>' : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>'}
                             </div>
-                            <div class="article-info">
-                                <span class="article-title">${art.title}</span>
-                                <div class="article-meta">
+                            <div class="card-body">
+                                <span class="card-title">${art.title}</span>
+                                <div class="card-meta">
                                     <span>${art.time}</span>
-                                    <span class="type-badge">${art.type}</span>
+                                    <span class="meta-type">${art.type}</span>
                                 </div>
                             </div>
-                            <div class="chevron">›</div>
                         </div>
                     `;
                 });
@@ -382,47 +517,93 @@
                 const found = s.articles.find(a => a.id === id);
                 if (found) article = found;
             });
-
             if (!article) return;
 
+            currentArticleId = id;
             document.getElementById('rt-title').textContent = article.title;
             document.getElementById('rt-time').textContent = article.time;
             document.getElementById('rt-type').textContent = article.type;
             document.getElementById('rt-content').innerHTML = article.content;
+            document.getElementById('rt-eyebrow').textContent = article.type;
 
-            readArticles.add(id);
-            localStorage.setItem('read_stimulants', JSON.stringify([...readArticles]));
-            updateProgress();
+            const btn = document.getElementById('complete-btn');
+            if (readArticles.has(id)) {
+                btn.classList.add('done');
+                btn.querySelector('span').textContent = 'Completed';
+            } else {
+                btn.classList.remove('done');
+                btn.querySelector('span').textContent = 'Mark as Finished';
+            }
 
             document.getElementById('reader-view').classList.add('active');
-            document.getElementById('list-view').classList.add('inactive');
-            document.getElementById('rt-content').scrollTop = 0;
+            document.getElementById('list-view').classList.add('hidden');
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            updateReadProgress();
         }
 
         function closeReader() {
             document.getElementById('reader-view').classList.remove('active');
-            document.getElementById('list-view').classList.remove('inactive');
+            document.getElementById('list-view').classList.remove('hidden');
+            currentArticleId = null;
+            renderList();
+        }
+
+        function handleGlobalScroll() {
+            if (currentArticleId) {
+                updateReadProgress();
+            }
+        }
+
+        function updateReadProgress() {
+            const h = document.documentElement, 
+                  b = document.body,
+                  st = 'scrollTop',
+                  sh = 'scrollHeight';
+            const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            document.getElementById('read-progress-fill').style.width = Math.min(percent, 100) + '%';
+        }
+
+        function markComplete() {
+            if (!currentArticleId) return;
+            readArticles.add(currentArticleId);
+            localStorage.setItem('read_stimulants', JSON.stringify([...readArticles]));
+            
+            const btn = document.getElementById('complete-btn');
+            btn.classList.add('done');
+            btn.querySelector('span').textContent = 'Completed';
+            
+            showToast("Lesson completed!");
+            updateProgress();
         }
 
         function updateProgress() {
             const total = DATA.sections.reduce((acc, s) => acc + s.articles.length, 0);
-            const pct = (readArticles.size / total) * 100;
+            const pct = Math.round((readArticles.size / total) * 100);
             document.getElementById('main-progress').style.width = pct + '%';
+            document.getElementById('prog-pct').textContent = pct + '%';
         }
 
-        
-        window.initModule = (t) => {
+        function showToast(txt) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-txt').textContent = txt;
+            t.classList.add('visible');
+            setTimeout(() => t.classList.remove('visible'), 3000);
+        }
+
+        // i18n Hook
+        window.onTranslationsLoaded = (t) => {
             if (t.DATA) DATA = t.DATA;
-            if (t.substance_name) document.querySelector('.substance-pill').textContent = t.substance_name;
-            renderList();
-            updateProgress();
+            init();
         };
 
-        const currentLang = localStorage.getItem('language') || 'en';
-        if (currentLang === 'en') {
-           init();
-        }
-        
+        // Fallback for English (where loader might not trigger hook if already loaded or not needed)
+        setTimeout(() => {
+            if (document.getElementById('content-list').innerHTML === '') {
+                init();
+            }
+        }, 500);
+    
     </script>
 </body>
 </html>
