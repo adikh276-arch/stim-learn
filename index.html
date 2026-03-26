@@ -20,7 +20,6 @@
             --bg: #FFFFFF;
             --bg-2: #F8FAFC;
             --bg-3: #F1F5F9;
-            --grad: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -70,35 +69,19 @@
 
         .crs-card {
             margin: 24px 16px 22px;
-            background: var(--grad);
-            border-radius: 24px;
-            padding: 28px 24px 26px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-        .crs-card::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            filter: blur(40px);
+            background: rgba(79, 70, 229, 0.05);
+            border: 1px solid rgba(79, 70, 229, 0.1);
+            border-radius: 20px;
+            padding: 24px 22px;
+            color: var(--ink);
         }
 
         .crs-title {
             font-family: 'DM Serif Display', serif;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 400;
-            margin-bottom: 8px;
-            line-height: 1.2;
-            letter-spacing: -.4px;
-            position: relative;
-            z-index: 2;
+            line-height: 1.25;
+            letter-spacing: -.3px;
         }
 
         .phases { padding: 0 16px; position: relative; }
@@ -478,75 +461,6 @@ function init(customData) {
             document.body.style.overflow = '';
             document.getElementById('view-art').classList.remove('open'); 
         }
-
-        // === SELF-CONTAINED i18n ===
-        const _LANGS = ['en','es','fr','de','hi','ja','zh-CN','ko','ru','it','pt','ar','tr','nl','pl','vi','th','id','sv','cs'];
-        (async function() {
-            const params = new URLSearchParams(window.location.search);
-            let lang = params.get('lang') || localStorage.getItem('qm_lang') || 'en';
-            if (!_LANGS.includes(lang)) lang = 'en';
-            localStorage.setItem('qm_lang', lang);
-
-            // Set language selector value once DOM is ready
-            function setSelector(lang) {
-                const sel = document.getElementById('language-selector');
-                if (sel) {
-                    sel.value = lang;
-                    sel.addEventListener('change', function(e) {
-                        const newLang = e.target.value;
-                        localStorage.setItem('qm_lang', newLang);
-                        const u = new URL(window.location.href);
-                        u.searchParams.set('lang', newLang);
-                        window.location.href = u.href;
-                    });
-                }
-            }
-
-            if (lang !== 'en') {
-                try {
-                    // Build absolute URL to the locale JSON
-                    const origin = window.location.origin;
-                    const pathParts = window.location.pathname.split('/');
-                    // Remove trailing empty string if URL ends with /
-                    if (pathParts[pathParts.length - 1] === '') pathParts.pop();
-                    // pathParts now ends at the module folder name
-                    const moduleBase = pathParts.join('/');
-                    const jsonUrl = origin + moduleBase + '/i18n/locales/' + lang + '.json?v=20';
-                    console.log('[QM i18n] Fetching', jsonUrl);
-
-                    const resp = await fetch(jsonUrl);
-                    if (!resp.ok) throw new Error('HTTP ' + resp.status + ' for ' + jsonUrl);
-                    const t = await resp.json();
-                    console.log('[QM i18n] Loaded', lang, 'translations');
-
-                    // Apply DATA override
-                    if (t.DATA) { DATA = t.DATA; }
-
-                    // Apply static strings
-                    if (t.course_title) {
-                        const crsTitle = document.getElementById('crs-title');
-                        if (crsTitle) {
-                            crsTitle.innerText = t.course_title;
-                            crsTitle.removeAttribute('data-i18n'); // prevent it from being overwritten by init back-logic
-                        }
-                    }
-
-                    if (t.btn_back) document.querySelectorAll('.back-txt').forEach(el => el.innerText = t.btn_back);
-                    document.documentElement.lang = lang;
-
-                    // Re-run init with translated data
-                    init(DATA);
-                    setSelector(lang);
-                    return;
-                } catch(e) {
-                    console.error('[QM i18n] Translation load failed, using English:', e.message);
-                }
-            }
-
-            // English or fallback
-            init(DATA);
-            setSelector(lang);
-        })();
         // === SELF-CONTAINED i18n ===
         const _LANGS = ['en','es','fr','de','hi','ja','zh-CN','ko','ru','it','pt','ar','tr','nl','pl','vi','th','id','sv','cs'];
         (async function() {
