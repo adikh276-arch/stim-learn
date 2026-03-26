@@ -90,28 +90,7 @@
             letter-spacing: -.3px;
         }
 
-        .crs-prog-track { height: 6px; background: rgba(79, 70, 229, .16); border-radius: 3px; margin-bottom: 8px; overflow: hidden; }
-        .crs-prog-fill { height: 100%; background: var(--blue); border-radius: 3px; width: 0%; transition: width .45s ease; }
-        .crs-prog-row { display: flex; justify-content: space-between; font-size: 12.5px; color: #6366F1; }
-        .crs-prog-count { font-weight: 600; color: var(--blue); }
-
-        .crs-continue {
-            display: none;
-            margin-top: 14px;
-            background: var(--blue);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 9px 18px;
-            font-size: 13px;
-            font-weight: 600;
-            font-family: 'DM Sans', sans-serif;
-            cursor: pointer;
-            align-items: center;
-            gap: 6px;
-            transition: background .15s;
-        }
-        .crs-continue.vis { display: inline-flex; }
+        .phases { padding: 0 16px; }
 
         .phases { padding: 0 16px; }
         .phase-blk { margin-bottom: 28px; }
@@ -145,7 +124,6 @@
             justify-content: center;
             flex-shrink: 0;
         }
-        .lc.done .lc-ico { background: var(--green-l); }
         .lc-body { flex: 1; min-width: 0; }
         .lc-title { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.35; margin-bottom: 3px; }
         .lc-meta { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--ink-3); }
@@ -182,13 +160,12 @@
             cursor: pointer;
             transition: all .2s ease;
             box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            appearance: none;
             -webkit-appearance: none;
         }
         .back-btn:hover { transform: scale(1.05); background: #1e293b !important; }
         .back-btn svg { stroke: #ffffff !important; }
 
-        .read-track { flex: 1; height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
-        .read-fill { height: 100%; background: var(--blue); width: 0%; border-radius: 2px; }
 
         .art-pg { max-width: 540px; margin: 0 auto; padding: 28px 20px 72px; }
         .art-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
@@ -208,20 +185,6 @@
         .quiz-card p { font-size: 15px; color: var(--ink-3); line-height: 1.7; margin-bottom: 22px; }
         .quiz-card-btn { background: var(--blue); color: white; border: none; border-radius: 12px; padding: 13px 32px; font-size: 15px; font-weight: 600; cursor: pointer; }
 
-        .art-footer { margin-top: 40px; padding-top: 26px; border-top: 1px solid var(--border); }
-        .done-btn { width: 100%; padding: 13px; background: var(--blue); color: white; border: none; border-radius: 12px; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 24px; transition: all .2s; }
-        .done-btn.completed { background: var(--green-l); color: var(--green); cursor: default; }
-
-        .fb-box { text-align: center; }
-        .fb-q { font-size: 14px; font-weight: 600; color: var(--ink-2); margin-bottom: 12px; }
-        .fb-row { display: flex; gap: 10px; }
-        .fb-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 10px; background: var(--bg-2); border: 1.5px solid var(--border); border-radius: 11px; font-size: 14px; font-weight: 500; color: var(--ink-2); cursor: pointer; }
-        .fb-btn.yes { background: var(--green-l); border-color: var(--green-b); color: var(--green); }
-        .fb-btn.no { background: var(--red-l); border-color: var(--red-b); color: var(--red); }
-        .fb-thanks { font-size: 12.5px; color: var(--ink-4); margin-top: 10px; display: none; }
-
-        #toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-90px); background: white; border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 12px; padding: 12px 18px; font-size: 14px; font-weight: 600; color: var(--green); box-shadow: 0 8px 32px rgba(0,0,0,.1); display: flex; align-items: center; gap: 8px; z-index: 999; transition: transform .32s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; opacity: 0; }
-        #toast.in { transform: translateX(-50%) translateY(0); opacity: 1; }
 
         @media(max-width:480px){ .crs-card { margin: 14px 12px 20px; } .phases { padding: 0 12px; } .art-pg { padding: 22px 16px 60px; } }
     </style>
@@ -255,20 +218,11 @@
         </div>
     </nav>
 
-    <div id="toast">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/><path d="M5 8l2.5 2.5 4-4" stroke="#16A34A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span id="toast-txt">Lesson completed!</span>
-    </div>
 
     <div id="view-list">
         <div class="page-wrap">
             <div class="crs-card">
                 <div class="crs-title" id="crs-title" data-i18n="course_title">Understanding Stimulant Addiction</div>
-                <div class="crs-prog-track"><div class="crs-prog-fill" id="crs-fill"></div></div>
-                <div class="crs-prog-row"><span id="crs-pct" data-i18n="progress_label">Completed 0%</span><span class="crs-prog-count" id="crs-cnt"></span></div>
-                <button class="crs-continue" id="crs-cont" onclick="continueCourse()">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Continue
-                </button>
             </div>
             <div class="phases" id="phases"></div>
         </div>
@@ -280,7 +234,6 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                 <span class="back-txt" data-i18n="btn_back">Back</span>
             </button>
-            <div class="read-track"><div class="read-fill" id="read-fill"></div></div>
         </div>
         <div class="art-pg">
             <div class="art-eyebrow" id="art-eye"></div>
@@ -290,19 +243,6 @@
                 <span id="art-time"></span>
             </div>
             <div class="art-body" id="art-body"></div>
-            <div class="art-footer" id="art-footer">
-                <button class="done-btn" id="done-btn" onclick="markDone()">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Mark as Complete
-                </button>
-                <div class="fb-box">
-                    <div class="fb-q">Was this lesson helpful?</div>
-                    <div class="fb-row">
-                        <button class="fb-btn" id="fb-y" onclick="giveFb(true)">Yes</button>
-                        <button class="fb-btn" id="fb-n" onclick="giveFb(false)">No</button>
-                    </div>
-                    <div class="fb-thanks" id="fb-thanks">Thank you for your feedback!</div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -436,10 +376,6 @@
         }
     ]
 };
-let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
-
-        
-
         function init(customData) {
             const currentData = customData || DATA;
             if (!currentData) return;
@@ -448,7 +384,6 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
             
             const list = document.getElementById('phases');
             list.innerHTML = '';
-            let total = 0, done = 0;
 
             phases.forEach(sec => {
                 const phase = document.createElement('div');
@@ -464,15 +399,11 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
                 const col = phase.querySelector('.lessons-col');
                 const lessons = sec.lessons || [];
                 lessons.forEach(ls => {
-                    total++;
-                    const isDone = read_stimulant.includes(ls.id);
-                    if(isDone) done++;
-                    
                     const item = document.createElement('div');
-                    item.className = 'lc' + (isDone ? ' done' : '');
+                    item.className = 'lc';
                     item.innerHTML = `
                         <div class="lc-ico">
-                            ${isDone ? '<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/><path d="M6 9l2 2 4-4" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="3" stroke="#94A3B8" stroke-width="1.2"/></svg>'}
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="3" stroke="#94A3B8" stroke-width="1.2"/></svg>
                         </div>
                         <div class="lc-body">
                             <div class="lc-title">${ls.title}</div>
@@ -484,31 +415,7 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
                 });
                 list.appendChild(phase);
             });
-
-            const pct = total ? Math.round((done / total) * 100) : 0;
-            const fill = document.getElementById('crs-fill');
-            if (fill) fill.style.width = pct + '%';
-            const pctText = document.getElementById('crs-pct');
-            if (pctText && !pctText.hasAttribute('data-i18n-applied')) {
-                pctText.innerText = `Completed ${pct}%`;
-            }
-            const cntText = document.getElementById('crs-cnt');
-            if (cntText) cntText.innerText = `${done}/${total}`;
-
-            const allLessons = phases.flatMap(s => s.lessons || []);
-            const next = allLessons.find(l => !read_stimulant.includes(l.id));
-            const contBtn = document.getElementById('crs-cont');
-            if (contBtn) {
-                if (next && done > 0) {
-                    contBtn.style.display = 'flex';
-                    window.nextLesson = next;
-                } else {
-                    contBtn.style.display = 'none';
-                }
-            }
         }
-
-        function continueCourse() { if(window.nextLesson) openArt(window.nextLesson); }
 
         function openArt(ls) {
             document.body.style.overflow = 'hidden';
@@ -518,13 +425,7 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
             document.getElementById('art-eye').innerText = ls.type;
             document.getElementById('art-h1').innerText = ls.title;
             document.getElementById('art-time').innerText = ls.mins + ' mins';
-            document.getElementById('art-body').innerHTML = ls.content || '<div class="quiz-card"><div class="quiz-ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h2>Ready to check your progress?</h2><p>This assessment helps you understand your relationship with ' + DATA.substance + ' and identifies key areas for focus.</p><button class="quiz-card-btn" onclick="markDone()">Start Assessment</button></div>';
-            
-            const btn = document.getElementById('done-btn');
-            const isDone = read_stimulant.includes(ls.id);
-            btn.className = 'done-btn' + (isDone ? ' completed' : '');
-            btn.innerHTML = isDone ? '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Lesson Completed' : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Mark as Complete';
-            
+            document.getElementById('art-body').innerHTML = ls.content || '<div class="quiz-card"><div class="quiz-ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h2>Ready to check your progress?</h2><p>This assessment helps you understand your relationship with ' + DATA.substance + ' and identifies key areas for focus.</p><button class="quiz-card-btn" onclick="closeArt()">Start Assessment</button></div>';
             window.currId = ls.id;
         }
 
@@ -533,26 +434,6 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
             document.getElementById('view-art').classList.remove('open'); 
         }
 
-        function markDone() {
-            if (!read_stimulant.includes(window.currId)) {
-                read_stimulant.push(window.currId);
-                localStorage.setItem('read_stimulant', JSON.stringify(read_stimulant));
-                showToast();
-                init();
-            }
-            closeArt();
-        }
-
-        function showToast() {
-            const t = document.getElementById('toast');
-            t.classList.add('in');
-            setTimeout(() => t.classList.remove('in'), 3000);
-        }
-
-        function giveFb(y) {
-            document.getElementById('fb-thanks').style.display = 'block';
-            setTimeout(() => document.getElementById('fb-thanks').style.display = 'none', 3000);
-        }
         // === SELF-CONTAINED i18n ===
         const _LANGS = ['en','es','fr','de','hi','ja','zh-CN','ko','ru','it','pt','ar','tr','nl','pl','vi','th','id','sv','cs'];
         (async function() {
@@ -561,7 +442,6 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
             if (!_LANGS.includes(lang)) lang = 'en';
             localStorage.setItem('qm_lang', lang);
 
-            // Set language selector value once DOM is ready
             function setSelector(lang) {
                 const sel = document.getElementById('language-selector');
                 if (sel) {
@@ -578,50 +458,24 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
 
             if (lang !== 'en') {
                 try {
-                    // Build absolute URL to the locale JSON
                     const origin = window.location.origin;
                     const pathParts = window.location.pathname.split('/');
-                    // Remove trailing empty string if URL ends with /
                     if (pathParts[pathParts.length - 1] === '') pathParts.pop();
-                    // pathParts now ends at the module folder name
                     const moduleBase = pathParts.join('/');
                     const jsonUrl = origin + moduleBase + '/i18n/locales/' + lang + '.json?v=20';
-                    console.log('[QM i18n] Fetching', jsonUrl);
-
                     const resp = await fetch(jsonUrl);
                     if (!resp.ok) throw new Error('HTTP ' + resp.status + ' for ' + jsonUrl);
                     const t = await resp.json();
-                    console.log('[QM i18n] Loaded', lang, 'translations');
-
-                    // Apply DATA override
                     if (t.DATA) { DATA = t.DATA; }
-
-                    // Apply static strings
                     if (t.course_title) {
                         const crsTitle = document.getElementById('crs-title');
                         if (crsTitle) {
                             crsTitle.innerText = t.course_title;
-                            crsTitle.removeAttribute('data-i18n'); // prevent it from being overwritten by init back-logic
+                            crsTitle.removeAttribute('data-i18n');
                         }
                     }
-                    if (t.progress_label) {
-                        const pctText = document.getElementById('crs-pct');
-                        if (pctText) {
-                            // Quick calculation for the progress label before init
-                            const curProgress = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
-                            const allLessons = (t.DATA || DATA).phases.flatMap(p => p.lessons || []);
-                            const done = allLessons.filter(l => curProgress.includes(l.id)).length;
-                            const total = allLessons.length;
-                            const currentPct = total ? Math.round((done / total) * 100) : 0;
-                            pctText.innerText = t.progress_label.replace('0', currentPct);
-                            pctText.setAttribute('data-i18n-applied', 'true');
-                        }
-                    }
-
                     if (t.btn_back) document.querySelectorAll('.back-txt').forEach(el => el.innerText = t.btn_back);
                     document.documentElement.lang = lang;
-
-                    // Re-run init with translated data
                     init(DATA);
                     setSelector(lang);
                     return;
@@ -629,8 +483,6 @@ let read_stimulant = JSON.parse(localStorage.getItem('read_stimulant') || '[]');
                     console.error('[QM i18n] Translation load failed, using English:', e.message);
                 }
             }
-
-            // English or fallback
             init(DATA);
             setSelector(lang);
         })();
